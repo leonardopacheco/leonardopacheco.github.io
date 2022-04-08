@@ -3,12 +3,12 @@
 /* Global variables. */
 :root {
   /* Default (light) theme */
-  --accent: #0d47a1;
+  --accent: #0067AC;
 }
 
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
   :root {
-    --accent: #4682b4;
+    --accent: #0067AC;
   }
 }
