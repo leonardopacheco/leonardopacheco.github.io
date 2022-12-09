@@ -2,7 +2,6 @@
 
 /* Global variables. */
 :root {
-
  /* Default (light) theme */
   --accent: #0067AC;
 }
@@ -12,4 +11,12 @@
   :root {
     --accent: #0067AC;
   }
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
 }
