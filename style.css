@@ -18,5 +18,9 @@ h1 {
 }
 
 header h1 {
-    font-size: 3rem;
+  font-size: 3rem;
+}
+
+img {
+  border-radius: 5px;
 }
