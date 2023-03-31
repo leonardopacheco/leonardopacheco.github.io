@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Leonardo Pacheco - sabotage games</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Sabotage games</h1>
+    </header>
+
+    <!-- Begin quote -->
+    <blockquote>
+        <p>Any algorithmic task can be sabotaged to create real-life versions of a hostile environment. This can be done by turning it into a game, which can be studied by know techniques. Thus, in Clausewitz’ immortal phrasing, game theory is “algorithmics pursued by other means”.</p>
+    <figcaption>van Benthem, <cite>An Essay on Sabotage and Obstruction</cite></figcaption>
+    </blockquote>
+    <!-- End quote -->
+
+    <p>Fix a graph. The sabotage game has two players: Blocker and Runner. Every turn, Blocker erases one edge and then Runner moves one step. Runner wins the game iff they can reach the ‘exit’ of the graph.</p>
+
+    <p>In the graph below, who wins the game?</p>
+
+    <img src="../images/sabotage_games.png">
+    <p>For clarity's sake: the start is at the upper left corner, and the exit is at the lower right corner. The graph is a non directed multigraph, so there are two paths from the start to the center and so on.</p>
+
+    <details>
+        <summary>Short answer.</summary>
+        <p>Blocker wins the game.</p>
+    </details>
+    <details>
+        <summary>Long answer.</summary>
+        <p>Blocker first cuts one edge connecting the center to the bottom right. They then erases the nodes connecting Runner’s current position and the exit node (if there is no such edge, they may erase any edge).</p>
+    </details>
+
+    <p>This puzzle is originally by <a href="https://doi.org/10.1007/978-3-540-32254-2_16">van Benthem</a>.</p>
+
+
+
+    <footer><p><a href="../posts.html">back to posts</a> - last updated: 2022-08-13</p></footer>
+</html>

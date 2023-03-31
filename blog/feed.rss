@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>Leonardo Pacheco (personal site)</title>
+  <description>rss feed with updates from my site</description>
+  <link>https://leonardopacheco.xyz</link>
+  <lastBuildDate>
+    Fri, 31 Mar 2023 18:30:00 +0200
+  </lastBuildDate>
+  <ttl>4300</ttl>
+</channel>
+
+<!-- Get timestamps at https://timestampgenerator.com/ -->
+
+<item>
+  <title>The Truth Lemma fails in the modal mu-calculus</title>
+  <description>
+    We show that, in general, the Truth Lemma for the modal \(\mu\)-calculus is false.
+  </description>
+  <link>https://leonardopacheco.xyz/blog/posts/truth_lemma_in_mu-calculus.html</link>
+  <pubDate>
+    Fri, 31 Mar 2023 18:30:00 +0200
+  </pubDate>
+</item>
+
+<item>
+  <title>LaTeX bits</title>
+  <description>
+    A collection of LaTeX code I find useful.
+  </description>
+  <link>https://leonardopacheco.xyz/blog/posts/latex_bits.html</link>
+  <pubDate>
+    Fri, 31 Mar 2023 18:30:00 +0200
+  </pubDate>
+</item>
+
+<item>
+  <title>Uploaded to leonardopacheco.xyz/blog/</title>
+  <description>
+    Uploaded the site to leonardopacheco.xyz/blog/.
+  </description>
+  <link>https://leonardopacheco.xyz/blog/</link>
+  <pubDate>
+    Fri, 31 Mar 2023 18:30:00 +0200
+  </pubDate>
+</item>
+</rss>

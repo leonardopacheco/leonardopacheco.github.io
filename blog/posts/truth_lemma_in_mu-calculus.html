@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Leonardo Pacheco - The Truth Lemma fails in the modal \(\mu\)-calculus</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>The Truth Lemma fails in the modal \(\mu\)-calculus</h1>
+    </header>
+
+<p>
+    Let \(M^\mathsf{L}\) be the canonical Kripke model for the modal logic \(\mathsf{L}\). Given a modal formula \(\varphi\) and a world \(\Gamma\) of \(M^\mathsf{L}\),
+    \[
+        \varphi\in\Gamma \text{ iff } \varphi\text{ holds at }\Gamma.
+    \]
+    This is the Truth Lemma for \(\mathsf{L}\). We show that, in general, the Truth Lemma for the modal \(\mu\)-calculus is false.
+</p>
+
+<p>
+    The Truth Lemma is a convenient tool to prove the completeness and finite model property of modal logics.
+    <a href="https://doi.org/10.1109/LICS.1993.287593">Completeness</a> and the <a href="https://doi.org/10.1007/BF00370554">finite model property</a> do hold for the \(\mu\)-calculus, but their proofs require other techniques.
+    See Bradfield and Stirling's <a href="https://doi.org/10.1016/S1570-2464(07)80015-2">survey</a> for more pointers.
+</p>
+
+<p>
+    Variations of the Truth Lemma for the \(\mu\)-calculus can be used in some settings.
+    \(\mathsf{wK4}\) is the modal logic of weakly-transitive frames and of derivative topological semantics.
+    <a href="https://arxiv.org/abs/2105.08231">Baltag, Bezhanishvili, and Fernández-Duque</a> used a Truth Lemma for the final canonical model of \(\mathsf{wK4}\) to show its completeness, decidability, and the finite model property.
+</p>
+
+<p>
+    The failure of the Truth Lemma on the modal \(\mu\)-calculus is a folklore result, but I couldn't find the proof written anywhere.
+    I wrote this post so a there is a findable proof on the internet.
+    It has been asked in the <a href="https://fomarchive.ugent.be/fom/2007-February/011313.html">FOL mailing list</a>, without an answer.
+    A related question about \(\mathsf{PDL}\) is on <a href="https://math.stackexchange.com/questions/2083967/propositional-dynamic-logic-compactness">Mathematics Stack Exchange</a>.
+</p>
+
+<h2>The \(\mu\)-calculus</h2>
+<p>
+    We begin with a very short introduction to the \(\mu\)-calculus.
+    The \(\mu\)-calculus is obtained by adding least and greatest fixed-point operators to modal logic. We write them as \(\mu\) and \(\nu\), respectively. The logic \(\mu\mathsf{K}\) is the least set of formulas containing
+    <ul>
+        <li>all tautologies;</li>
+        <li>\(\Box (\varphi \to \psi) \to (\Box\varphi \to \Box\psi)\);</li>
+        <li>\(\theta(\mu X.\theta) \to \mu X.\theta\);</li>
+    </ul>
+    <p>and closed under</p>
+    <ul>
+        <li>all rules of propositional logic;</li>
+        <li>necessitation: from \(\varphi\), infer \(\Box\varphi\);</li>
+        <li>induction: from \(\theta(\varphi)\to \varphi\), infer \(\mu X.\theta \to \varphi\).</li>
+    </ul>
+
+<p>
+    The model \(M^\mathsf{L}\) is a triple consisting of a set of worlds, an accessibility relation between worlds, and a valuation function assigning propositions to the set of worlds where they hold.
+    The worlds of the canonical model \(M^{\mu\mathsf{K}}\) are the complete extensions of the logic \(\mu\mathsf{K}\).
+    A complete extension \(\Gamma\) of \(\mu\mathsf{K}\) is a set of formulas such that \(\mu\mathsf{K}\subseteq \Gamma\); no contradiction is provable from \(\Gamma\); and, for all \(\varphi\) either \(\varphi\in\Gamma\) or \(\neg\varphi\in \Gamma\).
+    The canonical model's accessibility relation and valuation function will not be relevant in the proof below.
+</p>
+
+<p>
+    Before our proof, we review the meaning of some formulas.
+    Fix a Kripke model \(M\).
+    \(\mu X.P\lor \Diamond X\) holds at a world \(w\) iff there is a path starting from \(w\) which ends in a world where \(P\) holds.
+    Abbreviate a sequence of \(n\) many \(\Diamond\)s by \(\Diamond^n\).
+    Then \(\Diamond^n P\) holds at a world \(w\) iff there is a path starting from \(w\) which has length \(n\) and ends in a world where \(P\) holds.
+    (I plan to eventually write a post with the basic semantics of the \(\mu\)-calculus.)
+</p>
+
+<h2>The failure</h2>
+<p>
+    Consider the set of formulas \[\Gamma_0 = \{\mu X.P\lor \Diamond X\} \cup \{\neg \Diamond^n P \mid n\in\mathbb{N} \}.\]
+    Now, \(\Gamma_0\) is not satisfiable: if \(\mu X.P\lor \Diamond X\) holds at a world \(w\) then \(\Diamond^n P\) holds at \(w\) for some \(n\in\mathbb{N}\).
+    But \(\Gamma_0\) is consistent, since any of its <em>finite</em> subsets is satisfiable.
+    To see that, let \(M_n = (W,R,V)\) be a Kripke model such that:
+</p>
+    <ul>
+        <li>\(W=\{w_0, \dots, w_n\}\);</li>
+        <li>\(R = \{(w_i,w_{i+1})\mid i < n\}\);</li>
+        <li>\(V(P) = \{w_n\}\).</li>
+    </ul>
+    <p>In a picture:</p>
+    <img src="../images/truth_lemma_in_mu-calculus.png">
+    <!-- \node[world] (z) at (0,0) {$w_0$}; \node[world] (a) at (1,0) {$w_1$}; \node[world] (b) at (2,0) {$w_2$}; \node[world] (c) at (3,0) {$w_3$}; \node (d) at (4,0) {$\cdots$}; \node[world] (e) at (5,0) {$w_{n}$}; \draw[->] (z) -- (a); \draw[->] (a) -- (b); \draw[->] (b) -- (c); \draw[->] (c) -- (d); \draw[->] (d) -- (e); \node (el) at (5.5,-0.2) {$P$}; -->
+<p>
+    On one hand, there is a path of length \(n\) starting at \(w_0\) and ending in a world (\(w_n\)) where \(P\) holds. On the other hand, there is no shorter path with this property. So \(w_0\) satisfies \(\{\mu X.P\lor \Diamond X\} \cup \{\neg P, \neg \Diamond P,\dots, \neg \Diamond^{n-1} P \}\).
+</p>
+
+<p>
+    Suppose the Truth Lemma holds in the \(\mu\)-calculus.
+    Let \(\Gamma\) be a complete extension of \(\Gamma_0\). Then \(\Gamma\) is a world in the canonical model \(M^{\mu\mathsf{K}}\).
+    By the Truth Lemma, \(\Gamma\) satisfies each formula in \(\Gamma_0\). As \(\Gamma_0\) is not satisfiable, we have a contradiction.
+    Therefore the Truth Lemma fails in the \(\mu\)-calculus.
+</p>
+
+
+
+    <footer><p><a href="../posts.html">back to posts</a> - last updated: 2023-03-13</p></footer>
+
+    <!-- Load MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</html>

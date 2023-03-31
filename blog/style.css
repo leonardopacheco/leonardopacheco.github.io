@@ -1,0 +1,100 @@
+html {
+  font-family: "Palatino", serif;
+}
+
+body {
+  /* set website colors */
+  color: white;
+  background: #000010;
+  /* set website colors */
+  font-size: 1.2rem;
+  line-height: 1.5;
+  /* set website layout, one central column slight to the left */
+  display: grid;
+  grid-template-columns:
+    0.2fr min(45rem, 90%) 1fr;
+  margin: 0;
+}
+
+/* all children of body are in central column */
+body>* {
+  grid-column: 2;
+}
+
+/* header details */
+header {
+  border-bottom: 1px solid white;
+  text-align: left;
+}
+
+/* footer details */
+footer {
+  padding: 0.5rem 0rem;
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  border-top: 1px solid white;
+}
+
+
+/* style for links */
+a,
+a:visited {
+  color: deepskyblue;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* style for the bullets */
+summary {
+  cursor: pointer;
+}
+
+/* style for the text inside details */
+details[open]>p {
+  margin-left: 2rem;
+}
+
+/* add a little padding after the last paragraph */
+details[open] >*:last-child {
+  margin-bottom: 1rem;
+}
+
+/* styling for blockquotes */
+blockquote p::before {
+    content: '\201C';
+}
+blockquote p::after {
+    content: '\201D';
+}
+blockquote {
+    margin: 0.5em 0;
+}
+blockquote p {
+    padding: 5px;
+    background: #000040;
+    border-radius: 10px;
+}
+blockquote figcaption {
+    margin-top: -1.5rem;
+    padding: 5px;
+    background: #000020;
+    border-radius: 10px;
+}
+blockquote figcaption::before {
+    content: '—';
+}
+
+/* max size for images */
+img{
+    max-height:30rem;
+    max-width:min(45rem, 90%);
+    height:auto;
+    width:auto;
+}
+
+/* make the background of preformated text lighter */
+pre{
+    background: #000020;
+}

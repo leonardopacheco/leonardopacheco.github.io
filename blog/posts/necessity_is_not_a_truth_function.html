@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Leonardo Pacheco - Necessity is not a truth function</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Necessity is not a truth function</h1>
+    </header>
+
+<!-- https://mathstodon.xyz/@leonardopacheco/108229647491423155 -->
+<p>
+    We show that necessity as in the modal logic \(\mathsf{S5}\) or in Leibniz's interpretation is not a truth function. This is Exercise 1.5.1 of Fitting and Mendelsohn's <cite><a href="https://doi.org/10.1007/978-94-011-5292-1">First-Order Modal Logic</a></cite>.
+</p>
+<p>
+    Suppose necessity is a truth function. Write "\(P\) is necessary" as \(\Box P\). We consider two requirements on necessity:
+</p>
+<ul>
+    <li>necessity implies truth: \(\Box P\to P\) is true; </li>
+    <li>truth does not imply necessity: \(P\to \Box P\) is false.</li>
+</ul>
+<p>
+    There are four single input truth functions: functions from \(\{\mathtt{True},\mathtt{False}\}\) to \(\{\mathtt{True},\mathtt{False}\}\). Only one of them is such that \(\Box P\to P\) holds and \(P\to \Box P\) is false.
+The function is:
+<ul>
+    <li>\(\Box \mathtt{True} := \mathtt{False}\);</li>
+    <li>\(\Box \mathtt{False} := \mathtt{False}\).</li>
+</ul>
+<p>
+    Now, if necessity is a truth function, it must be this function. So \(\neg\Box P\) is true for any \(P\). That is, <em>nothing</em> is necessary. This is not a good requirement for necessity.
+</p>
+
+
+
+
+    <footer><p><a href="../posts.html">back to posts</a> - last updated: 2023-03-13</p></footer>
+
+    <!-- Load MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</html>
