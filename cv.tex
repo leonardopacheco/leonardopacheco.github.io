@@ -1,0 +1,148 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{article}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Hoefler Text}
+\setmonofont[Scale=0.8]{Monaco} 
+\setsansfont[Scale=0.9]{Optima Regular} 
+% ---- CUSTOM AMPERSAND
+\newcommand{\amper}{{\fontspec[Scale=.95]{Hoefler Text}\selectfont\itshape\&}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\sffamily\mdseries\large\underline} 
+\subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
+\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+
+% Japanese input
+\usepackage{zxjatype}
+
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={cv_leonardo_pacheco},pdfauthor={Leonardo Pacheco}]{hyperref}
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue} 
+
+% DOCUMENT
+\begin{document}
+\textsf{\LARGE Leonardo Kawakami Pacheco}\\[1cm]
+Mathematical Institute, Tohoku University\\
+Sendai, Miyagi, Japan\\[.2cm]
+email: \href{mailto:leonardovpacheco@gmail.com}{leonardovpacheco@gmail.com}\\
+site: \href{https://www.leonardopacheco.xyz}{https://www.leonardopacheco.xyz}\\ [.2cm]
+% \vfill
+Born:  October 19, 1994\\
+
+%%\hrule
+
+\section*{Current Position}
+\years{2023--} \textsc{TU Wien}\\
+Project Assistant\\
+
+\section*{Education}
+\years{2020--2023} PhD in Mathematics at \textsc{Tohoku University}\\
+Thesis: Exploring the difference hierarchies on $\mu$-calculus and arithmetic --- from the point of view of Gale--Stewart games \\
+Advisor: Keita Yokoyama \\
+
+\years{2018--2020} Master in Mathematics at \textsc{Tohoku University}\\
+Thesis: On the weak hierarchy of $\mu$-calculus\\
+Advisor: Kazuyuki Tanaka \\
+
+\years{2014--2017} Undergraduate in Mathematics at \textsc{Universidade Federal de Goiás}, Brazil \\
+
+\years{2012--2013} Undergraduate in Computer Science (incomplete) at \textsc{Universidade Federal de Goiás}, Brazil
+
+\section*{Complementary Education}
+\years{2019} IMS Graduate Summer School in Logic at NUS, Singapore \\
+\years{2016} IMS Graduate Summer School in Logic at NUS, Singapore
+
+\section*{Awards}
+\years{2023} Kawai Doctoral Thesis Award from \textsc{Tohoku University}
+% http://kawai-zaidan.or.jp/prizes.html
+
+
+\newpage
+
+\section*{Teaching}
+\years{2021} Teaching Assistant --- 数学基礎論特論 (Mathematical Logic --- Graduate)\\
+\years{2021} Teaching Assistant --- 計算機数学A  (Computability A)\\
+\years{2022} Teaching Assistant --- 計算機数学B  (Computability B)\\
+
+% \hrule
+
+\section*{Publications}
+\noindent L. Pacheco, W. Li, K. Tanaka, \emph{On one-variable fragments of modal $\mu$-calculus}, Proceedings of CTFM 2019, World Scientific Publications (2022), 17--45. \\
+
+L. Pacheco, K. Tanaka, \emph{On the degrees of ignorance: via epistemic logic and mu-calculus}, Proceedings of SOCREAL 2022: 6th International Workshop on Philosophy and Logic of Social Reality (2022), 74–78. \\
+
+L. Pacheco, K. Tanaka, \emph{The alternation hierarchy of the mu-calculus over weakly transitive frames} , Proceedings of WoLLIC 2022 – 28th Workshop on Logic, Language, Information and Computation, Lecture Notes in Computer Science, vol 12468, 207--220. \\
+
+L. Pacheco, \emph{Recent Results on Reflection Principles in Second-Order Arithmetic}, RIMS Kôkyûroku No.2228, 73--77. \\
+
+L. Pacheco, K. Yokoyama, \emph{Determinacy and reflection principles in second-order arithmetic}, preprint, \href{https://arxiv.org/abs/2209.04082}{arXiv:2209.04082}.
+
+\section*{Talks}
+
+\years{2023} \emph{Fixed-points in epistemic logic} at \href{https://www.mathsoc.jp/en/meeting/chuo23mar/index.html}{MSJ Spring Meeting 2023}. \\
+
+\years{2022} \emph{The $\mu$-calculus collapses to modal logic over frames of $\mathsf{IS5}$} at \href{https://sites.google.com/view/proof-theory-2022}{Proof Theory Symposium 2022}. \\
+
+\years{2022} \emph{The alternation hierarchy of the $\mu$-calculus over weakly transitive frames} at \href{https://wollic2022.github.io}{28th Workshop on Logic, Language, Information and Computation}. \\
+
+\years{2022} \emph{Determinacy and reflection principles in second-order arithmetic} at \href{https://wrmp2022.sciencesconf.org}{Workshop on Reverse Mathematics and its Philosophy}, joint presentation with Keita Yokoyama. \\
+
+\years{2022} \emph{Determinacy and reflection principles in second-order arithmetic} at \href{https://sites.google.com/view/jp-ru-logic2022/}{The second Japan-Russia workshop on effective descriptive set theory, computable analysis and automata}. \\
+
+\years{2022} \emph{On the degrees of ignorance: via epistemic logic and $\mu$-Calculus} at \href{http://www.asahi-net.or.jp/~yt6t-ymd/sr22/index.html}{SOCREAL 2022}. \\
+
+\newpage
+
+\years{2021} \emph{Sequences of $\beta_k$-models and reflection in second-order arithmetic} at \href{https://www.kyorin-u.ac.jp/univ/user/health/proof_theory/2021/}{Theory and Applications of Proof and Computation --- RIMS共同研究（公開系）}. \\
+
+\years{2021} \emph{On the $\mu$-calculus between $\mathsf{S4}$ and $\mathsf{S5}$} at \href{https://sites.google.com/unal.edu.co/i-enclogbracol/home?authuser=0}{$1^\mathrm{0}$ Enc(ue-o)ntro de Logica Brasil-Col(o-ô)mbia}. \\
+
+\years{2021} \emph{Modal semantics for epistemic logic} at \href{http://www2.kobe-u.ac.jp/~tk/jp/workshop/wakate2021.html}{数学基礎論若手の会 2021}. \\
+
+\years{2020} \emph{$\mu$-calculus and Wadge Degrees} at \href{https://www.kyorin-u.ac.jp/univ/user/health/proof_theory/2020/index.html}{Proof Theory Workshop 2020}.
+
+
+
+%\vspace{1cm}
+\vfill{}
+%\hrulefill
+
+\begin{center}
+{\scriptsize  Last updated: \today\\
+Access at \href{https://www.leonardopacheco.xyz/cv.pdf}{https://www.leonardopacheco.xyz/cv.pdf}}
+\end{center}
+
+\end{document}
