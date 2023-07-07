@@ -5,12 +5,23 @@
   <description>rss feed with updates from my site</description>
   <link>https://leonardopacheco.xyz</link>
   <lastBuildDate>
-    Fri, 31 Mar 2023 18:30:00 +0200
+    Fri, 07 Jul 2023 11:15:00 +0200
   </lastBuildDate>
   <ttl>4300</ttl>
 </channel>
 
 <!-- Get timestamps at https://timestampgenerator.com/ -->
+
+<item>
+  <title>Added links and quotations</title>
+  <description>
+    Added <a href="https://leonardopacheco.xyz/blog/links.html">links</a> and <a href="https://leonardopacheco.xyz/blog/quotes.html">quotes</a>.
+  </description>
+  <link>https://leonardopacheco.xyz/blog/index.html</link>
+  <pubDate>
+    Fri, 07 Jul 2023 11:15:00 +0200
+  </pubDate>
+</item>
 
 <item>
   <title>The Truth Lemma fails in the modal mu-calculus</title>
