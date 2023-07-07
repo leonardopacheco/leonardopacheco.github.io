@@ -26,7 +26,7 @@
 <item>
   <title>The Truth Lemma fails in the modal mu-calculus</title>
   <description>
-    We show that, in general, the Truth Lemma for the modal \(\mu\)-calculus is false.
+    We show that, in general, the Truth Lemma for the modal mu-calculus is false.
   </description>
   <link>https://leonardopacheco.xyz/blog/posts/truth_lemma_in_mu-calculus.html</link>
   <pubDate>
@@ -40,17 +40,6 @@
     A collection of LaTeX code I find useful.
   </description>
   <link>https://leonardopacheco.xyz/blog/posts/latex_bits.html</link>
-  <pubDate>
-    Fri, 31 Mar 2023 18:30:00 +0200
-  </pubDate>
-</item>
-
-<item>
-  <title>Uploaded to leonardopacheco.xyz/blog/</title>
-  <description>
-    Uploaded the site to leonardopacheco.xyz/blog/.
-  </description>
-  <link>https://leonardopacheco.xyz/blog/</link>
   <pubDate>
     Fri, 31 Mar 2023 18:30:00 +0200
   </pubDate>
