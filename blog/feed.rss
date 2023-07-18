@@ -5,12 +5,23 @@
   <description>rss feed with updates from my personal site.</description>
   <link>https://leonardopacheco.xyz</link>
   <lastBuildDate>
-    Fri, 07 Jul 2023 11:15:00 +0200
+    Tue, 18 Jul 2023 16:15:00 +0200
   </lastBuildDate>
   <ttl>4300</ttl>
 </channel>
 
 <!-- Get timestamps at https://timestampgenerator.com/ -->
+
+<item>
+  <title>Added comments on Mega Man Zero/ZX and Trails from the Zero/Trails to Azure</title>
+  <description>
+    Added comments on Mega Man Zero/ZX and Trails from the Zero/Trails to Azure.
+  </description>
+  <link>https://leonardopacheco.xyz/blog/game_comments.html</link>
+  <pubDate>
+    Tue, 18 Jul 2023 16:15:00 +0200
+  </pubDate>
+</item>
 
 <item>
   <title>Added new links and quotes</title>
