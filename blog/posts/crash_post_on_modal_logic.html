@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv='content-language' content='en-us'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Leonardo Pacheco - Crash post on Modal Logic</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Crash post on Modal Logic</h1>
+    </header>
+
+<p>
+    There are many ways to modify "\(P\) is true".
+    For example, we can say:
+</p>
+<ul>
+    <li>"\(P\) is necessarily true."</li>
+    <li>I believe "\(P\) is true."</li>
+    <li>"\(P\) is eventually true."</li>
+</ul>
+<p>
+    I'll give a very brief introduction on how we can model these statements in Modal Logic.
+</p>
+
+<h2>
+    What is necessity?
+</h2>
+<p>
+    It is not necessarily sunny in the whole year.
+    There are days which are cloudy, rainy or snowy.
+</p>
+<img src="../images/crash_post_ml/necessity-year.png" alt="Four squares depicting sunny, cloudy, rainy, and snowy days.">
+<p>
+    In summer, it is necessarily sunny.
+</p>
+<img src="../images/crash_post_ml/necessity-summer.png" alt="Four squares, all depicting sunny days.">
+<p>
+    That is, somethis is necessary if it is true in all possible situations.
+    (The work 'all' is doing a lot of work here.)
+</p>
+
+<h2>
+    What is belief?
+</h2>
+<p>
+    Suppose it is cloudy, but I think it is raining or snowing.
+    Maybe some family member is showing but I did not notice; or a neighbor is washing something outside.
+    Either way, we can picture this situation like this:
+</p>
+<img src="../images/crash_post_ml/belief.png" alt="One square depicting a cloudy day and two arrows: one pointing to a rainy square and one pointing to a snowy square.">
+<p>
+    I believe something is true if it is true in all situations I consider possible.
+</p>
+
+<h2>
+    What is eventually?
+</h2>
+<p>
+    Today is Friday, and cloudy; tomorrow will be Saturday and raining; the next day will be Sunday and sunny.
+    That is, t will eventually be sunny.
+</p>
+<img src="../images/crash_post_ml/eventually.png" alt="Three squares depicting a cloudy Friday, a rainy Saturday, and a sunny Sunday. There are arrows pointing from one square to the next.">
+<p>
+    Something is eventually true if it is true in some future situation.
+</p>
+
+<h2>
+    Kripke models
+</h2>
+<p>
+    Put all possible situations in a collection \(W\).
+    Each situation \(w\) in \(W\) has a collection of alternative situations.
+    This collection of situations along with their relation is a <a href="https://en.wikipedia.org/wiki/Kripke_semantics">Kripke model</a>.
+    As described above:
+</p>
+<ul>
+    <li> \(\Box P\) is true at \(w\) if \(P\) is true in all situations alternative to \(w\).</li>
+    <li> \(\Diamond P\) is true at \(w\) if \(P\) is true in some situation alternative to \(w\).</li>
+</ul>
+<p>
+    Now, "\(P\) is necessary" and "I believe \(P\) is true" can be written as \(\Box P\); "\(P\) is eventually true" can be written as \(\Diamond\). The meaning of these sentences depend on the possible situations and the relation between them.
+</p>
+
+
+
+<h2>Some comments</h2>
+<ol>
+    <li><a href="https://plato.stanford.edu/entries/logic-modal/">Here</a> is a short article introduction to Modal Logic. <a href="https://web.stanford.edu/group/cslipublications/cslipublications/site/9781575865980.shtml">Here</a> is a book introduction to Modal Logic. <a href="https://www.cambridge.org/core/books/modal-logic/F7CDB0A265026BF05EAD1091A47FCF5B">Here</a> is a book introduction to Modal Logic, for people who already know some logic.</li>
+
+    <li>I described Kripke models in this post. There are other ways of defining meaning for Modal Logic. All have vantages and disvantages.</li>
+
+    <li>Different types of necessity have different models. For example, when modelling belief, a situation may not be an alternative to itself. If we are modelling knowledge, a situation must be an alternative to itself.</li>
+
+    <li>I only described the meaning of Modal Logic. Modal logics are <strong>logics</strong>, they have axioms and rules. Different models have different logics, and vice-versa.</li>
+
+    <li>We may also combine \(\Box\)s and \(\Diamond\)s in the same statement. For example, \(\Box\Box P\) is a valid statement. What sense this makes depends on context.</li>
+
+    <li>I also did not specify which logic I added \(\Box\) and \(\Diamond\) to. This logic could be propositional logic, or first-order logic, or any other logic you want. Even other modal logics; in this case we would have multiple \(\Box\)s and \(\Diamond\)s.</li>
+</ol>
+
+
+
+
+    <footer>
+        <p><a href="../posts.html">back to posts</a> - last updated: 2023-07-30</p>
+        <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+    </footer>
+
+    <!-- Load MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</html>

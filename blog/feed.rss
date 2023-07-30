@@ -5,12 +5,23 @@
   <description>rss feed with updates from my personal site.</description>
   <link>https://leonardopacheco.xyz</link>
   <lastBuildDate>
-    Tue, 18 Jul 2023 16:15:00 +0200
+    Tue, 30 Jul 2023 13:15:00 +0200
   </lastBuildDate>
   <ttl>4300</ttl>
 </channel>
 
 <!-- Get timestamps at https://timestampgenerator.com/ -->
+
+<item>
+  <title>Crash post on Modal Logice</title>
+  <description>
+    I wrote a very brief introduction on Modal Logic.
+  </description>
+  <link>https://leonardopacheco.xyz/blog/crash_post_on_modal_logic.html</link>
+  <pubDate>
+    Tue, 30 Jul 2023 13:15:00 +0200
+  </pubDate>
+</item>
 
 <item>
   <title>Added comments on Mega Man Zero/ZX and Trails from the Zero/Trails to Azure</title>
