@@ -15,7 +15,7 @@
     <p>A collection of LaTeX code I find useful. Code in this page is licenced under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>.</p>
 <!-- begin bit -->
     <h2>
-        References
+        Resources
     </h2>
     <p>
         <a href="https://www.ctan.org/pkg/lshort"><cite>The Not So Short Introduction to LaTeX</cite></a> is a great introduction to LaTeX. This text has translations to many languages.
@@ -25,6 +25,24 @@
     </p>
 <!-- end bit -->
 
+<!-- begin bit -->
+    <h2>
+        Checking for paper length
+    </h2>
+    <p>
+        When writing conference papers, it is convenient to have an automated warning if the paper is too long.
+        I put the following code on the end of the text (before or after bibliography, depending on the page restrictions):
+    </p>
+    <pre><code>\ifnum \thepage>10
+Paper is too long!
+Currently {\thepage} pages.
+\PackageWarning{}{Paper is too long!}
+\fi</code></pre>
+    <p>
+        Remember to put the right page limit in the place of 10.
+        This may not be the prettiest way of doing it, but it works.
+    </p>
+<!-- end bit -->
 
 <!-- begin bit -->
     <h2>
@@ -156,7 +174,7 @@
     <p>I write my CV in LaTeX using a template by <a href="http://nitens.org/taraborelli/cvtex">Dario Taraborelli</a>.</p>
 
     <footer>
-        <p><a href="../posts.html">back to posts</a> - last updated: 2023-03-31 </p>
+        <p><a href="../posts.html">back to posts</a> - last updated: 2023-11-07 </p>
         <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
     </footer>
 </html>
