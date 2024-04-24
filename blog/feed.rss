@@ -11,6 +11,16 @@
 </channel>
 
 <!-- Get timestamps at https://timestampgenerator.com/ -->
+<item>
+  <title>Added new links.</title>
+  <description>
+    Added 1 new links.
+  </description>
+  <link>https://leonardopacheco.xyz/blog/links.html</link>
+  <pubDate>
+    Tue, 24 Apr 2023 16:25:00 +0200
+  </pubDate>
+</item>
 
 <item>
   <title>Crash post on Modal Logic</title>
