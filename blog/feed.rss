@@ -5,12 +5,23 @@
   <description>RSS feed with updates from my personal site.</description>
   <link>https://leonardopacheco.xyz</link>
   <lastBuildDate>
-    Thu, 08 May 2025 22:00:00 +0900
+    Fri, 09 May 2025 15:30:00 +0900
   </lastBuildDate>
   <ttl>4300</ttl>
 </channel>
 
 <!-- Get timestamps at https://timestampgenerator.com/ -->
+<item>
+  <title>Separating CK and IK, semantically</title>
+  <description>
+    Recently, Anupam Das and Sonia Marin proved that <a href="https://doi.org/10.1007/978-3-031-43513-3_16">these logics do not prove the same \(\Diamond\)-free formulas</a>; and not so recently Grefe proved the same in their PhD thesis. This result was not common knowledge, and <a href="https://prooftheory.blog/2022/08/19/brouwer-meets-kripke-constructivising-modal-logic/">commonly assumed false</a>. Das and Marin's proof is syntactical; here I give a simple semantical proof of this result.
+  </description>
+  <link>https://leonardopacheco.xyz/blog/posts/separating-ck-and-ik.html</link>
+  <pubDate>
+    Fri, 09 May 2025 15:30:00 +0900
+  </pubDate>
+</item>
+
 <item>
   <title>Added more links and game comments.</title>
   <description>

@@ -85,7 +85,7 @@ Currently {\thepage} pages.
         I use <a href="https://imagemagick.org/index.php">ImageMagick</a> to convert and edit the resulting <code>.pdf</code> file.
         To transform the <code>.pdf</code> into a <code>.png</code>, I run:
     </p>
-        <pre><code>convert -density 300 figure_generator.pdf a.png</code></pre>
+        <pre><code>magick -density 300 figure_generator.pdf a.png</code></pre>
     <p>
         Since my blog is always in dark mode, I want the figure to be white with transparent background.
         To do so, I run:

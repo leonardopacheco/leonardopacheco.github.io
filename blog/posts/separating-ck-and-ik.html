@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv='content-language' content='en-us'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Leonardo Pacheco - Separating CK and IK, semantically</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Separating \(\mathsf{CK}\) and \(\mathsf{IK}\), semantically</h1>
+    </header>
+
+    <p>
+      There are <em>many</em> non-classical variations of modal logic. I want to talk about the two major variations \(\mathsf{CK}\) and \(\mathsf{IK}\) of the modal logic \(\mathsf{K}\). Recently, Anupam Das and Sonia Marin proved that <a href="https://doi.org/10.1007/978-3-031-43513-3_16">these logics do not prove the same \(\Diamond\)-free formulas</a>; and not so recently Grefe proved the same in their PhD thesis. This result was not common knowledge, and <a href="https://prooftheory.blog/2022/08/19/brouwer-meets-kripke-constructivising-modal-logic/">commonly assumed false</a>. Das and Marin's proof is syntactical; here I give a simple semantical proof that \(\mathsf{IK} \models \neg\neg\Box\bot\to\Box\bot\) but \(\mathsf{CK} \not \models \neg\neg\Box\bot\to\Box\bot\).
+    </p>
+    <p>
+      For much more on the logics between \(\mathsf{CK}\) and \(\mathsf{IK}\), see Das and Marin's <a href="https://doi.org/10.1007/978-3-031-43513-3_16">"On Intuitionistic Diamonds (and Lack Thereof)"</a> and de Groot, Shillito, and Clouston's <a href="https://arxiv.org/abs/2408.00262">"Semantical Analysis of Intuitionistic Modal Logics between \(\mathsf{CK}\) and \(\mathsf{IK}\)"</a>. I also wrote about cases where the \(\mathsf{C}\) and \(\mathsf{I}\) versions of modal logics coincide in <a href="https://arxiv.org/abs/2408.16428">"Collapsing Constructive and Intuitionistic Modal Logics"</a>.
+    </p>
+
+    <h2>
+      A few definitions
+    </h2>
+    <p>
+      These definitions are standard in intuitionistic modal logic; for more detailed explanations, see the papers cited in the introduction.
+    </p>
+    <p>
+      \(\mathsf{CK}\) is the logic with axioms are intuitionistic tautologies, \(K_\Box := \Box(\varphi\to\psi) \to (\Box\varphi \to \Box \psi)\), and \(K_\Diamond := \Box(\varphi\to\psi) \to (\Diamond\varphi \to \Diamond \psi)\); it is closed under the rules
+      \[
+        (\mathbf{Nec}) \; \frac{\varphi}{\Box\varphi} \;\;\;\;\;\text{ and }\;\;\;\;\;
+        (\mathbf{MP}) \; \frac{\varphi \;\;\; \varphi\to\psi}{\psi}.
+      \]
+      \(\mathsf{IK}\) is obtained by adding to \(\mathsf{CK}\) the axioms \(FS := (\Diamond \varphi \to \Box\psi) \to \Box(\varphi\to\psi)\), \(DP := \Diamond (\varphi\lor\psi) \to \Diamond\varphi\lor\Diamond\psi\), and \(N := \neg \Diamond \bot\). These axioms all talk about diamonds, and none is purely about boxes.
+    </p>
+    <p>
+      The Kripke semantics for these logics combine the Kripke semantics of intuitionistic and modal logics.
+      More precisely, a \(\mathsf{CK}\)-model is a tuple \(M=\langle W, W^\bot ,\preceq, R, V \rangle\) where:
+    </p>
+    <ul>
+      <li>
+        \(W\) is the set of <em>possible worlds</em>;
+      </li>
+      <li>
+        \(W^\bot\subseteq W\) is the set of <em>fallible worlds</em>, worlds where everything is true;
+      </li>
+      <li>
+        the <em>intuitionistic relation</em> \(\preceq\) is a reflexive and transitive relation over \(W\);
+      </li>
+      <li>
+        the <em>modal relation</em> \(R\) is a relation over \(W\);
+      </li>
+      <li>
+        \(V:\mathrm{Prop}\to \mathcal{P}(W)\) is a <em>valuation function</em>.
+      </li>
+    </ul>
+    <p>
+      As in intuitionistic logic, we require that, if \(w \preceq v\) and \(w\in V(P)\), then \(v\in V(P)\). To guarantee the worlds in \(W^\bot\) behave as we want, we require that, for all \(P\in\mathrm{Prop}\), \(W^\bot\subseteq V(P)\); and, if \(w\in W^\bot\) and either \(w\preceq v\) or \(w R v\), then \(v\in W^\bot\).
+    </p>
+    <p>
+      An \(\mathsf{IK}\)-model is a \(\mathsf{CK}\)-model where \(W^\bot\) is empty and satisfies the following properties:
+    </p>
+    <ul>
+      <li>
+        \(wRv\) and \(w\preceq w'\) implies there is (v'\) such that \(v\preceq w' R v'\); and
+      </li>
+      <li>
+        \(wR  v \preceq v'\) implies there is \(w'\) such that \(w\preceq w' R v'\).
+      </li>
+    </ul>
+    <p>
+      These are necessary to make the extra axioms \(FS\), \(DP\), and \(N\) be sound.
+    </p>
+    <p>
+      The valuation of formulas is quite standard, we present only the cases where it differs from classical modal logics:
+    </p>
+    <ul>
+      <li>
+        \(M,w\models \bot\) iff \(w\in W^\bot\);
+      </li>
+      <li>
+        \(M,w\models \varphi\to\psi\) iff, for all \(v\in W\), if \(w\preceq v\) and \(M,v\models\varphi\), then \(M,v\models\psi\);
+      </li>
+      <li>
+        \(M,w\models \Box\varphi\) iff, for all \(v,u\in W\), if \(w\preceq v\) and \(vRu\), then \(M,u\models\varphi\); and
+      </li>
+      <li>
+        \(M,w\models \Diamond\varphi\) iff, for all \(v\in W\), if \(w\preceq v\) then, there is \(u\) such that \(vRu\) and \(M,u\models\varphi\).
+      </li>
+    </ul>
+    <p>
+      We can now state: \(\mathsf{CK}\) and \(\mathsf{IK}\) are complete with respect to their semantics.
+    </p>
+
+  <h2>
+      \(\mathsf{CK}\) does not validate \(\neg\neg\Box\bot\to\Box\bot\)
+    </h2>
+    <p>
+      At the world \(w_0\) in the following \(\mathsf{CK}\)-model, the formula \(\neg\neg\Box\bot\to\Box\bot\) does not hold:
+    </p>
+    <img
+      src="../images/separating-ck-and-ik/ck-counterexample.png"
+      alt="Figure of a CK-model with worlds w0, w1, w2. The relations w0 \preceq w2 and w0 R w1 hold."
+    >
+
+    <h2>
+      \(\mathsf{IK}\) validates \(\neg\neg\Box\bot\to\Box\bot\)
+    </h2>
+    <p>
+      Fix an \(\mathsf{IK}\)-model \(M\) and a world \(w\). Suppose \(w\) does not satisfy \(\Box\bot\), then there are worlds \(v_1\) and \(v_2\) such that \(w \preceq v_1\) and \(v_1 R v_2\). If \(w\) satisfies \(\neg\neg\Box\bot\), there is \(u_1\) such that \(v_1\preceq u_1\) and \(u_1\) satisfies \(\Box\bot\). Now, by the relation between \(R\) and \(\preceq\), there is \(u_2\) such that \(u_1 R u_2\) and \(v_2 \preceq u_2\). In particular, we have \(u_2\models\bot\); this is impossible in \(\mathsf{IK}\)-models. So if \(w\) satisfies \(\neg\neg\Box\bot\) then \(w\) satisfies \(\Box\bot\) too.
+    </p>
+
+    <img
+      src="../images/separating-ck-and-ik/ik-sketch.png"
+      alt="Figure summarizing the proof of \neg\neg\Box\bot\to\Box\bot in IK."
+    >
+
+    <h2>
+      TikZ Code for the figures
+    </h2>
+    <p>
+      Here is the TikZ code for the figures in this post. Feel free to use them as you want.
+    </p>
+    <details>
+      <summary>
+        Counter-example for \(\mathsf{CK}\not\models \neg\neg\Box\bot\to\Box\bot\)
+      </summary>
+      <pre><code>\tikzstyle{world}=[circle,draw,minimum size=5mm,inner sep=0pt]
+\begin{tikzpicture}
+  \node (w) at (0,-2) {$w_0$};
+  \node (w2) at (2,-2) {$w_1$};
+  \node (v) at (0,0) {$w_2$};
+
+  \draw[->] (w) -- (w2) node[midway,below] {$R$};
+  \draw[->] (w) -- (v) node[midway,left] {$\preceq$};
+\end{tikzpicture}</code></pre>
+    </details>
+    <details>
+      <summary>
+        Schema for the proof of \(\mathsf{IK} \models \neg\neg\Box\bot\to\Box\bot\)
+      </summary>
+      <pre><code>\tikzstyle{world}=[circle,draw,minimum size=5mm,inner sep=0pt]
+\begin{tikzpicture}
+  \node (w) at (0,-4) {$w$};
+  \node (v1) at (0,-2) {$v_1$};
+  \node (v2) at (2,-2) {$v_2$};
+
+  \draw[->] (w) -- (v1) node[midway,left] {\(\preceq\)};
+  \draw[->] (v1) -- (v2) node[midway,above] {\(R\)};
+
+  \node (u1) at (0,0) {$u_1$};
+  \draw[->] (v1) -- (u1) node[midway,left] {\(\preceq\)};
+
+  \node (u2) at (2,0) {$u_2$};
+  \draw[->,dashed] (u1) -- (u2) node[midway,above] {\(R\)};
+  \draw[->,dashed] (v2) -- (u2) node[midway,right] {\(\preceq\)};
+\end{tikzpicture}</code></pre>
+    </details>
+
+
+    <footer>
+        <p><a href="../posts.html">back to posts</a> - last updated: 2025-05-09</p>
+        <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+    </footer>
+
+    <!-- Load MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</html>
