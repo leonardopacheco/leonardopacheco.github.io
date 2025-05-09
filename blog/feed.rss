@@ -2,15 +2,26 @@
 <rss version="2.0">
 <channel>
   <title>Leonardo Pacheco</title>
-  <description>rss feed with updates from my personal site.</description>
+  <description>RSS feed with updates from my personal site.</description>
   <link>https://leonardopacheco.xyz</link>
   <lastBuildDate>
-    Fri, 20 Dex 2024 18:10:00 +0900
+    Thu, 08 May 2025 22:00:00 +0900
   </lastBuildDate>
   <ttl>4300</ttl>
 </channel>
 
 <!-- Get timestamps at https://timestampgenerator.com/ -->
+<item>
+  <title>Added more links and game comments.</title>
+  <description>
+    Added some 2 new links and 2 new game comments.
+  </description>
+  <link>https://leonardopacheco.xyz/blog/links.html</link>
+  <pubDate>
+    Thu, 08 May 2025 22:00:00 +0900
+  </pubDate>
+</item>
+
 <item>
   <title>Added more links.</title>
   <description>
@@ -18,7 +29,7 @@
   </description>
   <link>https://leonardopacheco.xyz/blog/links.html</link>
   <pubDate>
-    Fri, 20 Dex 2024 18:10:00 +0900
+    Fri, 20 Dez 2024 18:10:00 +0900
   </pubDate>
 </item>
 
