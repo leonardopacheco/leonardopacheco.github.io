@@ -5,7 +5,7 @@
   <description>RSS feed with updates from my personal site.</description>
   <link>https://leonardopacheco.xyz</link>
   <lastBuildDate>
-    Fri, 09 May 2025 15:35:00 +0900
+    Fri, 09 May 2025 15:40:00 +0900
   </lastBuildDate>
   <ttl>4300</ttl>
 </channel>
@@ -14,7 +14,7 @@
 <item>
   <title>Separating CK and IK, semantically</title>
   <description>
-    Recently, Anupam Das and Sonia Marin proved that CK and IK do not prove the same diamond-free formulas</a>. Their proof is syntactical; here I give a simple semantical proof of this result.
+    Recently, Anupam Das and Sonia Marin proved that CK and IK do not prove the same diamond-free formulas. Their proof is syntactical; here I give a simple semantical proof of this result.
   </description>
   <link>https://leonardopacheco.xyz/blog/posts/separating-ck-and-ik.html</link>
   <pubDate>
