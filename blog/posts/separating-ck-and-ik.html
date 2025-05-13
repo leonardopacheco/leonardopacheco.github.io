@@ -10,11 +10,11 @@
 </head>
 <body>
     <header>
-        <h1>Separating \(\mathsf{CK}\) and \(\mathsf{IK}\), semantically</h1>
+      <h1>Separating \(\mathsf{CK}\) and \(\mathsf{IK}\), semantically</h1>
     </header>
 
     <p>
-      There are <em>many</em> non-classical variations of modal logic. I want to talk about the two major variations \(\mathsf{CK}\) and \(\mathsf{IK}\) of the modal logic \(\mathsf{K}\). Recently, Anupam Das and Sonia Marin proved that <a href="https://doi.org/10.1007/978-3-031-43513-3_16">these logics do not prove the same \(\Diamond\)-free formulas</a>; and not so recently Grefe proved the same in their PhD thesis. This result was not common knowledge, and <a href="https://prooftheory.blog/2022/08/19/brouwer-meets-kripke-constructivising-modal-logic/">commonly assumed false</a>. Das and Marin's proof is syntactical; here I give a simple semantical proof that \(\mathsf{IK} \models \neg\neg\Box\bot\to\Box\bot\) but \(\mathsf{CK} \not \models \neg\neg\Box\bot\to\Box\bot\).
+      There are <em>many</em> non-classical variations of modal logic. In this post, I will talk a bit about the two major variations \(\mathsf{CK}\) and \(\mathsf{IK}\) of the modal logic \(\mathsf{K}\). Recently, Anupam Das and Sonia Marin showed that <a href="https://doi.org/10.1007/978-3-031-43513-3_16">these logics do not prove the same \(\Diamond\)-free formulas</a>; and not so recently Grefe proved the same in their PhD thesis. This result was not common knowledge, and <a href="https://prooftheory.blog/2022/08/19/brouwer-meets-kripke-constructivising-modal-logic/">commonly assumed false</a>. Das and Marin's proof is syntactical; here I give a simple semantical of this theorem by showing \(\mathsf{IK} \models \neg\neg\Box\bot\to\Box\bot\) but \(\mathsf{CK} \not \models \neg\neg\Box\bot\to\Box\bot\).
     </p>
     <p>
       For much more on the logics between \(\mathsf{CK}\) and \(\mathsf{IK}\), see Das and Marin's <a href="https://doi.org/10.1007/978-3-031-43513-3_16">"On Intuitionistic Diamonds (and Lack Thereof)"</a> and de Groot, Shillito, and Clouston's <a href="https://arxiv.org/abs/2408.00262">"Semantical Analysis of Intuitionistic Modal Logics between \(\mathsf{CK}\) and \(\mathsf{IK}\)"</a>. I also wrote about cases where the \(\mathsf{C}\) and \(\mathsf{I}\) versions of modal logics coincide in <a href="https://arxiv.org/abs/2408.16428">"Collapsing Constructive and Intuitionistic Modal Logics"</a>.
@@ -27,7 +27,21 @@
       These definitions are standard in intuitionistic modal logic; for more detailed explanations, see the papers cited in the introduction.
     </p>
     <p>
-      \(\mathsf{CK}\) is the logic with axioms are intuitionistic tautologies, \(K_\Box := \Box(\varphi\to\psi) \to (\Box\varphi \to \Box \psi)\), and \(K_\Diamond := \Box(\varphi\to\psi) \to (\Diamond\varphi \to \Diamond \psi)\); it is closed under the rules
+      \(\mathsf{CK}\) is the logic which axioms are:
+    </p>
+    <ul>
+      <li>
+        the intuitionistic tautologies;
+      </li>
+      <li>
+        \(K_\Box := \Box(\varphi\to\psi) \to (\Box\varphi \to \Box \psi)\); and
+      </li>
+      <li>
+        \(K_\Diamond := \Box(\varphi\to\psi) \to (\Diamond\varphi \to \Diamond \psi)\);
+      </li>
+    </ul>
+    <p>
+      and closed under the rules
       \[
         (\mathbf{Nec}) \; \frac{\varphi}{\Box\varphi} \;\;\;\;\;\text{ and }\;\;\;\;\;
         (\mathbf{MP}) \; \frac{\varphi \;\;\; \varphi\to\psi}{\psi}.
@@ -90,7 +104,7 @@
       </li>
     </ul>
     <p>
-      We can now state: \(\mathsf{CK}\) and \(\mathsf{IK}\) are complete with respect to their semantics.
+      We can now state: \(\mathsf{CK}\) and \(\mathsf{IK}\) are complete with respect to their respective semantics.
     </p>
 
   <h2>
@@ -160,7 +174,7 @@
 
 
     <footer>
-        <p><a href="../posts.html">back to posts</a> - last updated: 2025-05-09</p>
+        <p><a href="../posts.html">back to posts</a> - last updated: 2025-05-13</p>
         <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
     </footer>
 
