@@ -24,6 +24,63 @@
 
     <details>
         <summary>
+            “Epistemic possibility in Artemov and Protopopescu's intuitionistic epistemic logic” at <a href="https://www2.kobe-u.ac.jp/~brendle/alc2025/main.html">18th Asian Logic Conference</a>
+        </summary>
+
+        <p>
+            Epistemic logics formalize knowledge and related concepts.
+            Artemov and Protopopescu defined an epistemic logic \(\mathsf{IEL}\) to formalize intuitionistic knowledge.
+            The central idea of this logic is that intuitionistic truth implies intuitionistic knowledge.
+            This heavily contrasts with the classical case, where classical knowledge implies classical truth.
+        </p>
+        <p>
+            The modality \(K\) is interpreted in \(\mathsf{IEL}\) as
+            \[
+                K\varphi \text{ holds iff it is intuitionistically known that \(\varphi\)},
+            \]
+            for all formula \(\varphi\).
+            \(\mathsf{IEL}\) satisfies the principles of co-reflection \(\varphi\to K\varphi\) and weak reflection \(K\varphi\to \neg\neg\varphi\).
+            Note that, in a classical setting, these imply that truth and knowledge coincide.
+        </p>
+        <p>
+            We extend \(\mathsf{IEL}\) with a modality \(\hat K\) for epistemic possibility.
+            We will show that, for all formula \(\varphi\), \(\hat K P\) is equivalent to \(\neg\neg P\).
+            This implies that \(\varphi\) is epistemically possible iff it one can show that it is impossible to prove the negation of \(\varphi\).
+        </p>
+        <p>
+            <a href="./slides/alc2025-abstract.pdf">Full abstract.</a>
+            <!-- <a href="./slides/alc2025.pdf">Slides.</a> -->Slides soon.
+        </p>
+    </details>
+
+    <details>
+        <summary>
+            “\(\mathsf{IGL}\) via \(\omega\)-rules” at <a href="https://www.colloquium.co/lc2025">Logic Colloquium 2025</a>
+        </summary>
+
+        <p>
+            \(\mathsf{IGL}\) is an intuitionistic version of the provability logic \(\mathsf{GL}\) using both box and diamond modalities.
+            It was first studied by Das, van der Giessen, and Marin, who provided two ill-founded proof systems and two semantics for this logic.
+            Later, Aguilera and P. defined a cyclic proof system \(\mathsf{cm\ell IGL}\) for \(\mathsf{IGL}\); they also proved that the set of theorems of \(\mathsf{IGL}\) is recursively enumerable.
+        </p>
+        <p>
+            We define a well-founded labeled proof system \(\mathsf{\omega m\ell IGL}\) for \(\mathsf{IGL}\) characterized by the following \(\omega\)-rule:
+            \[
+              \frac{x:\Box^n\bot, \mathbf{R}, \Gamma \vdash \Delta \; (\forall n\in\omega)}{\mathbf{R},\Gamma \vdash \Delta},
+            \]
+            where \(x\) is a label variable.
+            To prove that all valid formulas of \(\mathsf{IGL}\) can be proved using the \(\omega\)-rule, we use a proof search game argument.
+            To show the soundness of the \(\omega\)-rule are valid, we closely analyze the completeness of \(\mathsf{cm\ell IGL}\).
+            Note that an \(\omega\)-rule for classical \(\mathsf{GL}\) was studied by Tanaka.
+        </p>
+        <p>
+            <a href="./slides/lc2025-abstract.pdf">Full abstract.</a>
+            <!-- <a href="./slides/lc2025.pdf">Slides.</a> -->Slides soon.
+        </p>
+    </details>
+
+    <details>
+        <summary>
             “On diamonds in constructive modal logic” at Conference on Non-Classical Modal Logics, National Taiwan University
         </summary>
 
@@ -397,7 +454,7 @@
         </p>
     </details>
 
-    <footer>Site created by myself, using <a href="https://simplecss.org">Simple.css</a> and <a href="https://mathjax.org">MathJax</a>. Last updated: 2025-04-10.</footer>
+    <footer>Site created by myself, using <a href="https://simplecss.org">Simple.css</a> and <a href="https://mathjax.org">MathJax</a>. Last updated: 2025-06-28.</footer>
 
     <!-- Load MathJax -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
