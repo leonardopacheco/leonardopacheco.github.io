@@ -1,14 +1,3 @@
-%------------------------------------
-% Dario Taraborelli
-% Typesetting your academic CV in LaTeX
-%
-% URL: http://nitens.org/taraborelli/cvtex
-% DISCLAIMER: This template is provided for free and without any guarantee 
-% that it will correctly compile on your system if you have a non-standard  
-% configuration.
-% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
-%------------------------------------
-
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
@@ -46,6 +35,9 @@
 % Japanese input
 \usepackage{zxjatype}
 
+% \newcommand{\highlightme}[1]{{\underline{#1}}}
+\newcommand{\highlightme}[1]{{#1}}
+
 
 % PDF SETUP
 % ---- FILL IN HERE THE DOC TITLE AND AUTHOR
@@ -54,30 +46,30 @@
 
 % DOCUMENT
 \begin{document}
-\textsf{\LARGE Leonardo Kawakami Pacheco}\\[1cm]
+\textsf{\LARGE Leonardo KAWAKAMI PACHECO}\\[1cm]
 School of Computing, Institute of Science Tokyo\\
 Tokyo, Japan\\[.2cm]
 email: \href{mailto:leonardovpacheco@gmail.com}{leonardovpacheco@gmail.com}\\
 site: \href{https://www.leonardopacheco.xyz}{https://www.leonardopacheco.xyz}\\ [.2cm]
 % \vfill
-Born:  October 19, 1994\\
 
 %%\hrule
 
 \section*{Current Position}
-\years{11/2024--} \textsc{Institute of Science Tokyo, Japan}\\
-Post-doctoral Researcher\\
+\years{11/2024--} \textsc{School of Computing, Institute of Science Tokyo, Japan}\\
+JSPS Postdoctoral Fellow\\
+KAKENHI Grant 24KF0214
 
 \section*{Previous Position}
-\years{05/2023--10/2024} \textsc{TU Wien, Austria}\\
+\years{05/2023--10/2024} \textsc{Institute of Discrete Mathematics and Geometry, TU Wien, Austria}\\
 Project Assistant under supervision of Juan P. Aguilera\\
 
 \section*{Education}
-\years{2020--2023} PhD in Mathematics at \textsc{Tohoku University}\\
+\years{2020--2023} Ph.D in Mathematics at \textsc{Tohoku University}, Japan\\
 Thesis: Exploring the difference hierarchies on $\mu$-calculus and arithmetic --- from the point of view of Gale--Stewart games \\
 Advisor: Keita Yokoyama \\
 
-\years{2018--2020} Master in Mathematics at \textsc{Tohoku University}\\
+\years{2018--2020} M.Sc. in Mathematics at \textsc{Tohoku University}, Japan\\
 Thesis: On the weak hierarchy of $\mu$-calculus\\
 Advisor: Kazuyuki Tanaka \\
 
@@ -85,9 +77,10 @@ Advisor: Kazuyuki Tanaka \\
 
 \years{2012--2013} Undergraduate in Computer Science (incomplete) at \textsc{Universidade Federal de Goiás}, Brazil
 
-\section*{Complementary Education}
-\years{2019} IMS Graduate Summer School in Logic at NUS, Singapore \\
-\years{2016} IMS Graduate Summer School in Logic at NUS, Singapore
+\section*{Language Proficiency}
+\noindent English --- Fluent (TOEIC Listening \& Reading, 985 points)\\
+          Japanese --- Fluent (Japanese Language Proficiency Test N1) \\
+          Portuguese --- Native
 
 \section*{Awards}
 \years{2023} \href{https://kawai-zaidan.or.jp/prizes/Kawai-DSc22.pdf}{Kawai Doctoral Thesis Award} from \textsc{Tohoku University}
@@ -98,46 +91,73 @@ Advisor: Kazuyuki Tanaka \\
 \years{2021} Teaching Assistant --- 計算機数学A  (Computability A)\\
 \years{2022} Teaching Assistant --- 計算機数学B  (Computability B)\\
 
+\section*{Service}
+\years{2026} 8th Intuitionistic Modal Logic and Applications Workshop (IMLA'26) --- Program Comitee Member \\
+\years{2026} Fuzzy Sets and Systems --- Peer-reviewer \\
+\years{2026} Logic Journal of the IGPL --- Peer-reviewer \\
+\years{2026} International Joint Conference on Automated Reasoning (IJCAR 2026) --- Peer-reviewer \\
+\years{2026} Advances in Modal Logic (AiML 2026) --- Peer-reviewer \\
+\years{2026} ACM/IEEE Symposium on Logic in Computer Science (LICS 2026) --- Peer-reviewer \\
+\years{2025} Annals of Pure and Applied Logic --- Peer-reviewer \\
+\years{2025} Theory and Applications of Craig Interpolation --- Chapter Peer-reviewer \\
+\years{2025} International Conference on Automated Reasoning with Analytic Tableaux and Related Methods (TABLEAUX 2025) --- Peer-reviewer \\
+
+
+
 % \hrule
 
 \section*{Peer-Reviewed Publications}
 
-\noindent L. Pacheco, K. Tanaka, \emph{The alternation hierarchy of the mu-calculus over weakly transitive frames}, Lecture Notes in Computer Science, Volume~12468, 207--220, 2022. \href{https://doi.org/10.1007/978-3-031-15298-6_13}{DOI:10.1007/978-3-031-15298-6\_13}. \\
+\noindent
+J.P. Aguilera, \highlightme{L. Pacheco}, \emph{Intuitionistic Gödel--Löb without sharps}, ACM Transactions on Computational Logic, Volume~26 (4), 1--14, 2025. \href{https://doi.org/10.1145/3748649}{DOI: 10.1145/3748649}. \\
 
-J.P. Aguilera, R. Lubarsky, L. Pacheco, \emph{Higher-Order Feedback Computation}, Lecture Notes in Computer Science, Volume~14773, 298--310, 2024. \href{https://doi.org/10.1007/978-3-031-64309-5_24}{DOI:10.1007/978-3-031-64309-5\_24}. \\
+\highlightme{L. Pacheco}, \emph{The $\mu$-calculus' Alternation Hierarchy is Strict over Non-Trivial Fusion Logics}, Electronic Proceedings in Theoretical Computer Science, Volume~435, 93--103, 2025. \href{https://doi.org/10.4204/EPTCS.435.8}{DOI:10.4204/EPTCS.435.8}. \\
 
-J.P. Aguilera, L. Pacheco, \emph{Intuitionistic Gödel--Löb without sharps}, ACM Transactions on Computational Logic, Volume~26 (4), 1--14, 2025. \href{https://doi.org/10.1145/3748649}{DOI: 10.1145/3748649}. \\
+J.P. Aguilera, R. Lubarsky, \highlightme{L. Pacheco}, \emph{Higher-Order Feedback Computation}, Lecture Notes in Computer Science, Volume~14773, 298--310, 2024. \href{https://doi.org/10.1007/978-3-031-64309-5_24}{DOI:10.1007/978-3-031-64309-5\_24}. \\
 
-L. Pacheco, \emph{The $\mu$-calculus' Alternation Hierarchy is Strict over Non-Trivial Fusion Logics}, Electronic Proceedings in Theoretical Computer Science, Volume~435, 93--103, 2025. \href{https://doi.org/10.4204/EPTCS.435.8}{DOI:10.4204/EPTCS.435.8}. \\
+\highlightme{L. Pacheco}, K. Tanaka, \emph{The alternation hierarchy of the mu-calculus over weakly transitive frames}, Lecture Notes in Computer Science, Volume~12468, 207--220, 2022. \href{https://doi.org/10.1007/978-3-031-15298-6_13}{DOI:10.1007/978-3-031-15298-6\_13}. \\
+
+
+\newpage
 
 \section*{Preprints}
 
-\noindent L. Pacheco, K. Yokoyama, \emph{Determinacy and reflection principles in second-order arithmetic}, \href{https://arxiv.org/abs/2209.04082}{arXiv:2209.04082}. \\
+\noindent
+\highlightme{L. Pacheco}, \emph{The Constructive $\mu$-calculus: Game Semantics and Non-Wellfounded Proof Systems}, \href{https://arxiv.org/abs/2604.23273}{arXiv:2604.23273} \\
 
-L. Pacheco, \emph{Collapsing Constructive and Intuitionistic Modal Logics}, \href{https://arxiv.org/abs/2408.16428}{arXiv:2408.16428}. \\
+J.P. Aguilera, D. Fernández-Duque, \highlightme{L. Pacheco}, \emph{Polytopological Semantics for Intuitionistic Modal Logics}, \href{https://arxiv.org/abs/2604.23234}{arXiv:2604.23234} \\
 
-J.P. Aguilera, D. Fernández-Duque, L. Pacheco, \emph{Polytopological Semantics for Intuitionistic Modal Logics}, \href{https://arxiv.org/abs/2604.23234}{arXiv:2604.23234} \\
+\highlightme{L. Pacheco}, \emph{Collapsing Constructive and Intuitionistic Modal Logics}, \href{https://arxiv.org/abs/2408.16428}{arXiv:2408.16428}. \\
 
-L. Pacheco, \emph{The Constructive $\mu$-calculus: Game Semantics and Non-Wellfounded Proof Systems}, \href{https://arxiv.org/abs/2604.23273}{arXiv:2604.23273} \\
+\highlightme{L. Pacheco}, K. Yokoyama, \emph{Determinacy and reflection principles in second-order arithmetic}, \href{https://arxiv.org/abs/2209.04082}{arXiv:2209.04082}. \\
+
+
+
 
 \section*{Other Publications}
 
-\noindent L. Pacheco, W. Li, K. Tanaka, \emph{On one-variable fragments of modal $\mu$-calculus}, Proceedings of CTFM 2019, World Scientific Publications, 17--45, 2022. \\
+\noindent \highlightme{L. Pacheco}, W. Li, K. Tanaka, \emph{On one-variable fragments of modal $\mu$-calculus}, Proceedings of CTFM 2019, World Scientific Publications, 17--45, 2022. \\
 
-L. Pacheco, \emph{Recent Results on Reflection Principles in Second-Order Arithmetic}, RIMS Kôkyûroku No.2228, 73--77, 2023. \\
+\highlightme{L. Pacheco}, \emph{Recent Results on Reflection Principles in Second-Order Arithmetic}, RIMS Kôkyûroku No.2228, 73--77, 2023. \\
 
-L. Pacheco, \emph{Epistemic possibility in Artemov and Protopopescu's intuitionistic epistemic logic}, RIMS Kôkyûroku No.2293, 66--71, 2024. \\
+\highlightme{L. Pacheco}, \emph{Epistemic possibility in Artemov and Protopopescu's intuitionistic epistemic logic}, RIMS Kôkyûroku No.2293, 66--71, 2024. \\
 
-W. Li, L. Pacheco, K. Tanaka, \emph{A fine hierarchy for the alternation-free modal $\mu$-calculus}, RIMS Kôkyûroku No.2346, 89--101, 2026. \\
+W. Li, \highlightme{L. Pacheco}, K. Tanaka, \emph{A fine hierarchy for the alternation-free modal $\mu$-calculus}, RIMS Kôkyûroku No.2346, 89--101, 2026. \\
 
-Y. Nishimura, L. Pacheco, \emph{On the Complexity of the SAT problem for the Hybrid Logic}, RIMS Kôkyûroku No.2346, 102--109, 2026. \\
-
-
+Y. Nishimura, \highlightme{L. Pacheco}, \emph{On the Complexity of the SAT problem for the Hybrid Logic}, RIMS Kôkyûroku No.2346, 102--109, 2026. \\
 
 
-\section*{Talks}
+
+
+\section*{Invited Talks}
 
 \years{2026} \emph{A short overview of non-classical modal logics} at \href{https://sites.google.com/view/saml2026/%E3%83%9B%E3%83%BC%E3%83%A0}{Symposium on Advances in Mathematical Logic 2026}. \\
+
+\years{2025} \emph{On diamonds in constructive modal logic} at Conference on Non-Classical Modal Logics, National Taiwan University.\\
+
+\newpage
+
+\section*{Selected Talks}
 
 \years{2026} \emph{A non-wellfounded proof system for the constructive $\mu$-calculus} at \href{https://sites.google.com/view/ookayamamodallogic/}{Ookayama Workshop on Modal Logic}. \\
 
@@ -145,25 +165,11 @@ Y. Nishimura, L. Pacheco, \emph{On the Complexity of the SAT problem for the Hyb
 
 \years{2026} \emph{Gödel--Dummett meets Gödel--Löb} at \href{https://www.dagstuhl.de/26052}{Arithmetical and Modal mu-Calculi: Recent and Future Advances}. \\
 
-\years{2025} \emph{Gödel--Dummett--Gödel--Löb Logic} at \href{https://www2.kobe-u.ac.jp/~tk/jp/workshop/MLG2025/}{第60回MLG数理論理学研究集会}. \\
-
-\years{2025} \emph{Intuitionistic Knowledge as a Constructive Diamond} at \href{https://sites.google.com/view/llal-at-gsis/meetings/llalgsis-9}{LLAL@GSIS (IX)}.\\
-
 \years{2025} \emph{Epistemic possibility in Artemov and Protopopescu's intuitionistic epistemic logic} at \href{https://www2.kobe-u.ac.jp/~brendle/alc2025/main.html}{18th Asian Logic Conference} \\
 
 \years{2025} \emph{\(\mathsf{IGL}\) via \(\omega\)-rules} at \href{https://www.colloquium.co/lc2025}{Logic Colloquium 2025}.\\
 
-\years{2025} \emph{On diamonds in constructive modal logic} at Conference on Non-Classical Modal Logics, National Taiwan University.\\
-
-\years{2025} \emph{Collapsing Constructive and Intuitionistic Modal Logics} at \href{https://www.mathsoc.jp/en/meeting/waseda25mar/}{MSJ Spring Meeting 2025}.\\
-
 \years{2025} \emph{Topological Semantics for \(\mathsf{IS4}\)} at \href{https://sites.google.com/view/llal-at-gsis/meetings/llalgsis-6}{LLAL@GSIS (VI)}.\\
-
-\newpage
-
-\years{2025} \emph{The \(\mu\)-calculus' Alternation Hierarchy is Strict over Non-Trivial Fusion Logics} at \href{https://sites.google.com/view/mlg59}{第59回MLG数理論理学研究集会}.\\
-
-\years{2024} \emph{\(\mathsf{IGL}\) without sharps} at \href{https://sites.google.com/view/proof-theory-2024/home}{証明論シンポジウム2024}.\\
 
 \years{2024} \emph{Collapsing Constructive and Intuitionistic Modal Logics} at \href{https://sites.google.com/view/aalogic/past-aal-conferences/aal-conference-2024?authuser=0}{Australasian Association for Logic 2024 Conference}.\\
 
@@ -171,51 +177,19 @@ Y. Nishimura, L. Pacheco, \emph{On the Complexity of the SAT problem for the Hyb
 
 \years{2024} \emph{Higher-order feedback computation} at \href{https://events.illc.uva.nl/CiE/CiE2024/Main/}{Computability in Europe 2024}.\\
 
-\years{2024} \emph{Higher-order feedback computation} at \href{https://lc2024.se/}{Logic Colloquium 2024}.\\
-
-\years{2024} \emph{Higher-order feedback computation} at \href{https://sites.google.com/view/ccr2024/home}{CCR2024: 17th International Conference on Computability, Complexity and Randomness}.\\
-
-\years{2024} \emph{Higher-order feedback computation} at \href{https://www.mathsoc.jp/en/meeting/omu24mar/}{MSJ Spring Meeting 2024}. \\
-
 \years{2024} \emph{A constructive variation of $\mathsf{GL}$} at \href{https://www.mathsoc.jp/en/meeting/omu24mar/}{MSJ Spring Meeting 2024}. \\
 
 \years{2024} \emph{The $\mu$-calculus' Alternation Hierarchy is Strict over Non-Trivial Fusion Logics} at \href{https://www.irif.fr/users/saurin/fics2024/index.html}{Fixed Points in Computer Science 2024}. \\
 
-\years{2024} \emph{Higher-order feedback computation} at \href{https://juan.ag/tips-2024}{Trends in Proof Theory 2024}. \\
-
-\years{2023} \emph{Epistemic possibility in intuitionistic epistemic logic} at \href{https://sites.google.com/view/proof-theory-2023}{RIMS Workshop: New Frontiers of Proof and Computation}. \\
-
-\years{2023} \emph{Connecting reflection and beta-models in second-order arithmetic} at \href{https://sites.google.com/view/techniquesfromlogic/home}{Conference on Techniques from Logic in Mathematics}.\\
-
 \years{2023} \emph{Game Semantics for the Constructive $\mu$-calculus} at \href{http://www.lanmr.unam.mx/index.html}{15th Latin American Workshop on New Methods of Reasoning}. \\
 
-\years{2023} \emph{Towards a characterization of the $\mu$-calculus' collapse to modal logic} at \href{https://sites.google.com/view/aalogic/aal-conference-2023}{Australasian Association for Logic 2023 Conference}. \\
-
-\years{2023} \emph{The reverse mathematics of $\omega$-automata} at \href{https://sites.google.com/view/xbmyl3svm2zgtsfmnyeq94xp43}{若手による数理論理学研究集会}. \\
-
-\years{2023} \emph{The $\mu$-calculus' collapse on variations of $\mathsf{S5}$} at \href{https://lc2023.unimi.it}{Logic Colloquium 2023}. \\
-
 \years{2023} \emph{Fixed-points in epistemic logic} at \href{https://www.mathsoc.jp/en/meeting/chuo23mar/index.html}{MSJ Spring Meeting 2023}. \\
-
-\newpage
-
-\years{2022} \emph{The $\mu$-calculus collapses to modal logic over frames of $\mathsf{IS5}$} at \href{https://sites.google.com/view/proof-theory-2022}{Proof Theory Symposium 2022}. \\
 
 \years{2022} \emph{The alternation hierarchy of the $\mu$-calculus over weakly transitive frames} at \href{https://wollic2022.github.io}{28th Workshop on Logic, Language, Information and Computation}. \\
 
 \years{2022} \emph{Determinacy and reflection principles in second-order arithmetic} at \href{https://wrmp2022.sciencesconf.org}{Workshop on Reverse Mathematics and its Philosophy}, joint presentation with Keita Yokoyama. \\
 
-\years{2022} \emph{Determinacy and reflection principles in second-order arithmetic} at \href{https://sites.google.com/view/jp-ru-logic2022/}{The second Japan-Russia workshop on effective descriptive set theory, computable analysis and automata}. \\
-
 \years{2022} \emph{On the degrees of ignorance: via epistemic logic and $\mu$-Calculus} at \href{http://www.asahi-net.or.jp/~yt6t-ymd/sr22/index.html}{SOCREAL 2022}. \\
-
-\years{2021} \emph{Sequences of $\beta_k$-models and reflection in second-order arithmetic} at \href{https://www.kyorin-u.ac.jp/univ/user/health/proof_theory/2021/}{Theory and Applications of Proof and Computation --- RIMS共同研究（公開系）}. \\
-
-\years{2021} \emph{On the $\mu$-calculus between $\mathsf{S4}$ and $\mathsf{S5}$} at \href{https://sites.google.com/unal.edu.co/i-enclogbracol/home?authuser=0}{$1^\mathrm{0}$ Enc(ue-o)ntro de Logica Brasil-Col(o-ô)mbia}. \\
-
-\years{2021} \emph{Modal semantics for epistemic logic} at \href{http://www2.kobe-u.ac.jp/~tk/jp/workshop/wakate2021.html}{数学基礎論若手の会 2021}. \\
-
-\years{2020} \emph{$\mu$-calculus and Wadge Degrees} at \href{https://www.kyorin-u.ac.jp/univ/user/health/proof_theory/2020/index.html}{Proof Theory Workshop 2020}.
 
 
 
@@ -223,9 +197,5 @@ Y. Nishimura, L. Pacheco, \emph{On the Complexity of the SAT problem for the Hyb
 \vfill{}
 %\hrulefill
 
-\begin{center}
-{\scriptsize  Last updated: \today\\
-Access at \href{https://www.leonardopacheco.xyz/cv.pdf}{https://www.leonardopacheco.xyz/cv.pdf}}
-\end{center}
 
 \end{document}
