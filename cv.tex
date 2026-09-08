@@ -1,5 +1,5 @@
-%!TEX TS-program = xelatex
-%!TEX encoding = UTF-8 Unicode
+% !TeX program = XeLaTeX
+% !TeX encoding = UTF-8
 
 \documentclass[11pt, a4paper]{article}
 \usepackage{fontspec} 
@@ -10,14 +10,9 @@
 \setlength\parindent{0in}
 
 % FONTS
-\usepackage{xunicode}
-\usepackage{xltxtra}
-\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
-\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Hoefler Text}
-\setmonofont[Scale=0.8]{Monaco} 
-\setsansfont[Scale=0.9]{Optima Regular} 
-% ---- CUSTOM AMPERSAND
-\newcommand{\amper}{{\fontspec[Scale=.95]{Hoefler Text}\selectfont\itshape\&}}
+\setromanfont{Palatino}
+\setmonofont{Palatino}
+\setsansfont{Palatino}
 % ---- MARGIN YEARS
 \usepackage{marginnote}
 \newcommand{\years}[1]{\marginnote{\scriptsize #1}}
@@ -32,15 +27,14 @@
 \subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
 \subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
 
-% Japanese input
-\usepackage{zxjatype}
+\usepackage{xeCJK}
+\setCJKmainfont{Hiragino Mincho Pro}
 
 % \newcommand{\highlightme}[1]{{\underline{#1}}}
 \newcommand{\highlightme}[1]{{#1}}
 
 
 % PDF SETUP
-% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
 \usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={cv_leonardo_pacheco},pdfauthor={Leonardo Pacheco}]{hyperref}
 \hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue} 
 
@@ -123,6 +117,9 @@ J.P. Aguilera, R. Lubarsky, \highlightme{L. Pacheco}, \emph{Higher-Order Feedbac
 \section*{Preprints}
 
 \noindent
+
+\highlightme{L. Pacheco}, \emph{Modalities in non-classical variations of $\mathsf{S4}$}, \href{https://arxiv.org/abs/2609.00736}{arXiv:2609.00736} \\
+
 \highlightme{L. Pacheco}, \emph{The Constructive $\mu$-calculus: Game Semantics and Non-Wellfounded Proof Systems}, \href{https://arxiv.org/abs/2604.23273}{arXiv:2604.23273} \\
 
 J.P. Aguilera, D. Fernández-Duque, \highlightme{L. Pacheco}, \emph{Polytopological Semantics for Intuitionistic Modal Logics}, \href{https://arxiv.org/abs/2604.23234}{arXiv:2604.23234} \\

@@ -30,3 +30,8 @@ img{
   /*soft corners*/
   border-radius: 5px;
 }
+
+/* input boxes use the whole width */
+input {
+      width: 100%;
+}
