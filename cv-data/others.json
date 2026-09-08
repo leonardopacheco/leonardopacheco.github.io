@@ -1,0 +1,67 @@
+[
+  {
+    "title": "A fine hierarchy for the alternation-free modal \\(\\mu\\)-calculus",
+    "authorList": "W. Li, L. Pacheco, K. Tanaka",
+    "abstract": "The modal \\(\\mu\\)-calculus extends propositional modal logic with least and greatest fixpoint operators. Its standard alternation hierarchy classifies formulas by the number of alternations between least and greatest fixpoints. We introduce a fine hierarchy —— the weak alternation hierarchy, based on capture-free simultaneous substitutions. To establish its semantic strictness, we reduce the evaluation games to weak parity games whose winning regions are witnessed by certain weak formulas. We further analyze the classical collapsing results for the alternation hierarchy over restricted transition systems through the lens of our weak alternation hierarchy.",
+    "journal": "RIMS Kôkyûroku",
+    "volume": "",
+    "issue": "",
+    "number": "2346",
+    "pages": "89--101",
+    "date": "2026-06-??",
+    "link": "https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/2346-08.pdf",
+    "frontPage": false
+  },
+  {
+    "title": "On the Complexity of the SAT problem for the Hybrid Logic",
+    "authorList": "Y. Nishimura, L. Pacheco",
+    "abstract": "In this paper, we revisit a theorem by Areces, Blackburn, and Marx, who showed that the complexity of the SAT problem for the hybrid logic \\(\\mathbf{K}(@)\\) is PSAPCE-complete, the same as that of standard modal logic.",
+    "journal": "RIMS Kôkyûroku",
+    "volume": "",
+    "issue": "",
+    "number": "2346",
+    "pages": "102--109",
+    "date": "2026-06-??",
+    "link": "https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/2346-09.pdf",
+    "frontPage": false
+  },
+  {
+    "title": "Epistemic possibility in Artemov and Protopopescu’s intuitionistic epistemic logic",
+    "authorList": "L. Pacheco",
+    "abstract": "Artemov and Protopopescu defined an intuitionistic epistemic logic IEL to reason about intuitionistic knowledge. While classical knowledge implies classical truth, intuitionistic truth implies intuitionistic knowledge. We describe Artemov and Protopopescu's IEL and its BHK interpretation. We characterize epistemic possibility in IEL.",
+    "journal": "RIMS Kôkyûroku",
+    "volume": "",
+    "issue": "",
+    "number": "2293",
+    "pages": "66--71",
+    "date": "2024-10-??",
+    "link": "https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/2293-06.pdf",
+    "frontPage": false
+  },
+  {
+    "title": "Recent Results on Reflection Principles in Second-Order Arithmetic",
+    "authorList": "L. Pacheco",
+    "abstract": "We survey recent results on reflection in second-order arithmetic. The reflection principles we consider can be roughly divided into two categories: semantic reflection and syntactic reflection.",
+    "journal": "RIMS Kôkyûroku",
+    "volume": "",
+    "issue": "",
+    "number": "2228",
+    "pages": "73--77",
+    "date": "2022-08-??",
+    "link": "https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/2228-07.pdf",
+    "frontPage": false
+  },
+  {
+    "title": "On one-variable fragments of modal mu-calculus",
+    "authorList": "L. Pacheco, W. Li, K. Tanaka",
+    "abstract": "In this paper, we study one-variable fragments of modal \\(\\mu\\)-calculus and their relations to parity games. We first introduce the weak modal \\(\\mu\\)-calculus as an extension of the one-variable modal \\(\\mu\\)-calculus. We apply weak parity games to show the strictness of the one-variable hierarchy as well as its extension. We also consider games with infinitely many priorities and show that their winning positions can be expressed by both \\(\\Sigma^\\mu_2\\) and \\(\\Pi^\\mu_2\\) formulas with two variables, but requires a transfinite extension of the \\(L_\\mu\\)-formulas to be expressed with only one variable. At last, we define the \\(\\mu\\)-arithmetic and show that a set of natural numbers is definable by both a \\(\\Sigma^\\mu_2\\) and a \\(\\Pi^\\mu_2\\) formula of \\(\\mu\\)-arithmetic if and only if it is definable by a formula of the one-variable transfinite \\(\\mu\\)-arithmetic.",
+    "journal": "Computability Theory and Foundations of Mathematics (Proceedings of CTFM 2019)",
+    "volume": "",
+    "issue": "",
+    "number":"",
+    "pages": "17--45",
+    "date": "2022-??-??",
+    "link": "https://doi.org/10.1142/9789811259296_0002",
+    "frontPage": false
+  }
+]

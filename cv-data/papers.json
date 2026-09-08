@@ -1,0 +1,54 @@
+[
+  {
+    "title": "The \\(\\mu\\)-calculus' Alternation Hierarchy is Strict over Non-Trivial Fusion Logics",
+    "authorList": "L. Pacheco",
+    "abstract": "The modal \\(\\mu\\)-calculus is obtained by adding least and greatest fixed-point operators to modal logic. It's alternation hierarchy classifies the \\(\\mu\\)-formulas by their alternation depth: a measure of the codependence of their least and greatest fixed-point operators. The \\(\\mu\\)-calculus' alternation hierarchy is strict over the class of all Kripke frames: for all \\(n\\), there is a \\(\\mu\\)-formula with alternation depth \\(n+1\\) which is not equivalent to any formula with alternation depth \\(n\\). This does not always happen if we restrict the semantics. For example, every \\(\\mu\\)-formula is equivalent to a formula without fixed-point operators over \\(\\mathsf{S5}\\) frames. We show that the multimodal \\(\\mu\\)-calculus' alternation hierarchy is strict over non-trivial fusions of modal logics. We also comment on two examples of multimodal logics where the \\(\\mu\\)-calculus collapses to modal logic.",
+    "journal": "Electronic Proceedings in Theoretical Computer Science",
+    "volume": "435",
+    "issue": "",
+    "number": "",
+    "pages": "93--103",
+    "date": "2025-11-04",
+    "doi": "10.4204/EPTCS.435.8",
+    "frontPage": true
+  },
+  {
+    "title": "Intuitionistic Gödel--Löb Without Sharps",
+    "authorList": "J. Aguilera, L. Pacheco",
+    "abstract": "Das, van der Giessen, and Marin recently introduced \\(\\mathsf{IGL}\\), an intuitionistic version of Gödel-Löb logic. Their proof systems involves ill-founded proofs with a progressiveness condition. Their completeness proof uses the principle of \\(\\Sigma^1_1\\)-determinacy; which is not provable in \\(\\mathsf{ZFC}\\). We define a cyclic proof system for \\(\\mathsf{IGL}\\) and give a proof of its completeness theorem avoiding \\(\\Sigma^1_1\\)-determinacy.",
+    "journal": "ACM Transactions on Computational Logic",
+    "volume": "26",
+    "issue": "4",
+    "number": "20",
+    "pages": "1--14",
+    "date": "2025-09-01",
+    "doi": "10.1145/3748649",
+    "frontPage": true
+  },
+  {
+    "title": "Higher-Order Feedback Computation",
+    "authorList": "J. Aguilera, R. Lubarsky, L. Pacheco",
+    "abstract": "Feedback Turing machines are Turing machines which can query a halting oracle which has information on the convergence or divergence of feedback computations. To avoid a contradiction by diagonalization, feedback Turing machines have two ways of not converging: they can diverge as standard Turing machines, or they can freeze. A natural question to ask is: what about feedback Turing machines which can ask if computations of the same type converge, diverge, or freeze? We define \\(\\alpha\\)th order feedback Turing machines for each computable ordinal \\(\\alpha\\). We also describe feedback computable and semi-computable sets using inductive definitions and Gale–Stewart games.",
+    "journal": "Lecture Notes in Computer Science",
+    "volume": "14773",
+    "issue": "",
+    "number": "",
+    "pages": "298--310",
+    "date": "2024-07-02",
+    "doi": "10.1007/978-3-031-64309-5_24",
+    "frontPage": true
+  },
+  {
+    "title": "The alternation hierarchy of the mu-calculus over weakly transitive frames",
+    "authorList": "L. Pacheco, K. Tanaka",
+    "abstract": "Abstract: It is known that the \\(\\mu\\)-calculus collapses to its alternation-free fragment over transitive frames and to modal logic over equivalence relations. We adapt a proof by D'Agostino and Lenzi to show that the \\(\\mu\\)-calculus collapses to its alternation-free fragment over weakly transitive frames. As a consequence, we show that the \\(\\mu\\)-calculus with derivative topological semantics collapses to its alternation-free fragment. We also study the collapse over frames of \\(\\mathsf{S4.2}\\), \\(\\mathsf{S4.3}\\), \\(\\mathsf{S4.3.2}\\), \\(\\mathsf{S4.4}\\) and \\(\\mathsf{KD45}\\), logics important for Epistemic Logic. At last, we use the \\(\\mu\\)-calculus to define degrees of ignorance on Epistemic Logic and study the implications of \\(\\mu\\)-calculus's collapse over the logics above.",
+    "journal": "Lecture Notes in Computer Science",
+    "volume": "12468",
+    "issue": "",
+    "number": "",
+    "pages": "207--220",
+    "date": "2022-09-09",
+    "doi": "10.1007/978-3-031-15298-6_13",
+    "frontPage": true
+  }
+]

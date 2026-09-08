@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Modalities in non-classical variations of \\(\\mathsf{S4}\\)",
+    "authorList": "L. Pacheco",
+    "abstract": "A classical result in modal logic states that \\(\\mathsf{S4}\\) has \\(14\\) modalities, that is, every sequence of negations, boxes, and diamonds is equivalent to one in a set of \\(14\\) such sequences. We study analogous results for the non-classical analogues \\(\\mathsf{CS4}\\), \\(\\mathsf{IS4}\\), \\(\\mathsf{GS4}\\), and \\(\\mathsf{GS4^c}\\) of \\(\\mathsf{S4}\\). First, we show that, while all these logics have finitely many \\(\\{\\Box,\\Diamond\\}\\)- and \\(\\{\\neg,\\Box\\}\\)-modalities, the logic \\(\\mathsf{CS4}\\) has infinitely many \\(\\{\\neg,\\Diamond\\}\\)-modalities. Second, we show that \\(\\mathsf{IS4}\\) and \\(\\mathsf{GS4}\\) have finitely many \\(\\{\\neg,\\Diamond\\}\\)-modalities, but they have infinitely many \\(\\{\\neg,\\Box,\\Diamond\\}\\)-modalities. At last, we show that \\(\\mathsf{GS4^c}\\) has finitely many \\(\\{\\neg,\\Box,\\Diamond\\}\\)-modalities.",
+    "date": "2026-09-??",
+    "arXiv": "2609.00736",
+    "frontPage": false
+  },
+  {
+    "title": "The Constructive \\(\\mu\\)-calculus: Game Semantics and Non-Wellfounded Proof Systems",
+    "authorList": "L. Pacheco",
+    "abstract": "We study a variant of the modal \\(\\mu\\)-calculus based on the constructive modal logic \\(\\mathsf{CK}\\). We define game semantics for the constructive \\(\\mu\\)-calculus and prove its equivalence to the birelational Kripke semantics. We then use the game semantics to prove the soundness and completeness of a fully-labeled non-wellfounded proof system for it. At last, we briefly describe how to adapt the game semantics and proof system to the \\(\\mu\\)-calculus over other non-classical modal logics.",
+    "date": "2026-04-??",
+    "arXiv": "2604.23273",
+    "frontPage": true
+  },
+  {
+    "title": "Polytopological Semantics for Intuitionistic Modal Logics",
+    "authorList": "J.P. Aguilera, D. Fernández-Duque, L. Pacheco",
+    "abstract": "We develop polytopological semantics for various constructive, intuitionistic, and Gödel-Dummett variations of \\(\\mathsf{K4}\\) and \\(\\mathsf{S4\\). In our models, intuitionistic and modal operators are interpreted via various topologies over a single set, equipped with either the closure or derivative operators. We identify regularity conditions to ensure that spaces validate each of our target logics and prove that all the logics considered are sound and strongly complete with respect to their respective semantics.",
+    "date": "2026-04-??",
+    "arXiv": "2604.23234",
+    "frontPage": true
+  },
+  {
+    "title": "Collapsing Constructive and Intuitionistic Modal Logics",
+    "authorList": "L. Pacheco",
+    "abstract": "In this note, we prove that the constructive and intuitionistic variants of the modal logic \\(\\mathsf{KB}\\) coincide. This result contrasts with a recent result by Das and Marin, who showed that the constructive and intuitionistic variants of \\(\\mathsf{K}\\) do not prove the same diamond-free formulas.",
+    "date": "2024-08-??",
+    "arXiv": "2408.16428",
+    "frontPage": true
+  },
+  {
+    "title": "Game semantics for the constructive \\(\\mu\\)-calculus",
+    "authorList": "L. Pacheco",
+    "abstract": "We define game semantics for the constructive \\(\\mu\\)-calculus and prove its correctness. We use these game semantics to prove that the \\(\\mu\\)-calculus collapses to modal logic over \\(\\mathsf{CS5}\\) frames. Finally, we prove the completeness of \\(\\mathsf{\\mu CS5}\\) over \\(\\mathsf{CS5}\\) frames.",
+    "date": "2023-08-??",
+    "arXiv": "2308.16697",
+    "frontPage": false
+  },
+  {
+    "title": "Determinacy and reflection principles in second-order arithmetic",
+    "authorList": "L. Pacheco, K. Yokoyama",
+    "abstract": "Abstract: It is known that several variations of the axiom of determinacy play important roles in the study of reverse mathematics, and the relation between the hierarchy of determinacy and comprehension are revealed by Tanaka, Nemoto, Montalbán, Shore, and others. We prove variations of a result by Kołodziejczyk and Michalewski relating determinacy of arbitrary boolean combinations of \\(\\Sigma^0_2\\) sets and reflection in second-order arithmetic. Specifically, we prove that: over \\(\\mathsf{ACA}_0\\), \\(\\Pi^1_2\\)-\\(\\mathsf{Ref}(\\mathsf{ACA}_0)\\) is equivalent to \\(\\forall n.(\\Sigma^0_1)_n\\)-\\(\\mathsf{Det}^*_0\\); \\(\\Pi^1_3\\)-\\(\\mathsf{Ref}(\\Pi^1_1\\)-\\(\\mathsf{CA}_0)\\) is equivalent to \\(\\forall n.(\\Sigma^0_1)_n\\)-\\(\\mathsf{Det}\\); and \\(\\Pi^1_3\\)-\\(\\mathsf{Ref}(\\Pi^1_2\\)-\\(\\mathsf{CA}_0)\\) is equivalent to \\(\\forall n.(\\Sigma^0_2)_n\\)-\\(\\mathsf{Det}\\). We also restate results by Montalbán and Shore to show that \\(\\Pi^1_3\\)-\\(\\mathsf{Ref}(\\mathsf{Z}_2)\\) is equivalent to \\(\\forall n.(\\Sigma^0_3)_n\\)-\\(\\mathsf{Det}\\) over \\(\\mathsf{ACA}_0\\).",
+    "date": "2022-09-??",
+    "arXiv": "2209.04082",
+    "frontPage": true
+  }
+]

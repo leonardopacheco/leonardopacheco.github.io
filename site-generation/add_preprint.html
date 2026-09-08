@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Preprint</title>
+  <meta http-equiv='content-language' content='en-us'>
+
+  <!-- Load simple.css and custom modifications -->
+  <link rel="stylesheet" type="text/css" href="../simple.css">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <h1>Add Preprint</h1>
+
+  <form id="dataForm">
+    <p>
+      <label for="title">Title</label>
+      <input id="title" name="title" type="text">
+    </p>
+
+    <p>
+      <label for="authorList">Author List</label>
+      <input id="authorList" name="authorList" type="text">
+    </p>
+
+    <p>
+      <label for="abstract">Abstract</label>
+      <input id="abstract" name="abstract" type="text">
+    </p>
+
+    <p>
+      <label for="date">Date</label>
+      <input id="date" name="date" type="date">
+    </p>
+
+    <p>
+      <label for="arXiv">arXiv Identifier</label>
+      <input id="arXiv" name="arXiv" type="text">
+    </p>
+
+    <p>
+      <input id="frontPage" name="frontPage" type="checkbox">
+      <label for="frontPage">Front Page</label>
+    </p>
+
+    <button type="submit">Generate JSON</button>
+    <button type="button" id="copyBtn">Copy to clipboard</button>
+  </form>
+
+  <pre id="output"></pre>
+
+  <script>
+    const form = document.getElementById("dataForm");
+    const output = document.getElementById("output");
+    const copyBtn = document.getElementById("copyBtn");
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const entry = {};
+
+      entry.title = document.getElementById("title").value;
+      entry.authorList = document.getElementById("authorList").value;
+      entry.abstract = document.getElementById("abstract").value;
+      entry.date = document.getElementById("date").value;
+      entry.arXiv = document.getElementById("arXiv").value;
+      entry.frontPage = document.getElementById("frontPage").checked;
+
+      const json = JSON.stringify(entry, null, 2);
+
+      output.textContent = json;
+      output.style.display = "block";
+      copyBtn.style.display = "inline-block";
+    });
+
+    copyBtn.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(output.textContent);
+        copyBtn.textContent = "Copied!";
+        setTimeout(() => { copyBtn.textContent = "Copy to clipboard"; }, 1500);
+      } catch (error) {
+        copyBtn.textContent = "Could not copy";
+      }
+    });
+  </script>
+</body>
+</html>
