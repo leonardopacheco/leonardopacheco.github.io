@@ -19,7 +19,7 @@
   <form id="dataForm">
     <p>
       <label for="title">Title</label>
-      <input id="title" name="title" type="text">
+      <input id="title" name="title" type="text" autocomplete="off">
     </p>
 
     <p>
@@ -29,32 +29,33 @@
 
     <p>
       <label for="event">Event</label>
-      <input id="event" name="event" type="text">
+      <input id="event" name="event" type="text" autocomplete="off">
     </p>
 
     <p>
       <label for="eventWebsite">Event Website</label>
-      <input id="eventWebsite" name="eventWebsite" type="text">
+      <input id="eventWebsite" name="eventWebsite" type="text" autocomplete="off">
     </p>
 
     <p>
       <label for="country">Country</label>
-      <input id="country" name="country" type="text">
+      <input id="country" name="country" type="text" autocomplete="off">
     </p>
 
     <p>
       <label for="slides">Slides Link</label>
-      <input id="slides" name="slides" type="text">
+      <input id="slides" name="slides" type="text" autocomplete="off">
     </p>
 
     <p>
       <label for="abstract">Abstract</label>
-      <input id="abstract" name="abstract" type="text">
+      <br>
+      <textarea id="abstract" name="abstract" autocomplete="off"></textarea>
     </p>
 
     <p>
       <label for="fullAbstract">Full Abstract Link</label>
-      <input id="fullAbstract" name="fullAbstract" type="text">
+      <input id="fullAbstract" name="fullAbstract" type="text" autocomplete="off">
     </p>
 
     <p>
@@ -75,6 +76,16 @@
   <pre id="output"></pre>
 
   <script>
+    function replaceDollarDelimiters(text) {
+      let opening = true;
+
+      return text.replace(/\$/g, () => {
+          const replacement = opening ? "\\(" : "\\)";
+          opening = !opening;
+          return replacement;
+      });
+    }
+
     const form = document.getElementById("dataForm");
     const output = document.getElementById("output");
     const copyBtn = document.getElementById("copyBtn");
@@ -90,7 +101,7 @@
       entry.eventWebsite = document.getElementById("eventWebsite").value;
       entry.country = document.getElementById("country").value;
       entry.slides = document.getElementById("slides").value;
-      entry.abstract = document.getElementById("abstract").value;
+      entry.abstract = replaceDollarDelimiters(document.getElementById("abstract").value);
       entry.fullAbstract = document.getElementById("fullAbstract").value;
       entry.frontPage = document.getElementById("frontPage").checked;
       entry.international = document.getElementById("international").checked;

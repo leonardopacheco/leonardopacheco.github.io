@@ -33,5 +33,10 @@ img{
 
 /* input boxes use the whole width */
 input {
-      width: 100%;
+  width: 100%;
+}
+textarea {
+  resize: none;
+  width: 100%;
+  field-sizing: content;
 }

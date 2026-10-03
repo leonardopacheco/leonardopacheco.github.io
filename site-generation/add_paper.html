@@ -19,42 +19,43 @@
   <form id="dataForm">
     <p>
       <label for="title">Title</label>
-      <input id="title" name="title" type="text">
+      <input id="title" name="title" type="text" autocomplete="off">
     </p>
 
     <p>
       <label for="authorList">Author List</label>
-      <input id="authorList" name="authorList" type="text">
+      <input id="authorList" name="authorList" type="text" autocomplete="off" placeholder="abbreviate first names, separate by commas">
     </p>
 
     <p>
       <label for="abstract">Abstract</label>
-      <input id="abstract" name="abstract" type="text">
+      <br>
+      <textarea id="abstract" name="abstract" autocomplete="off"></textarea>
     </p>
 
     <p>
       <label for="journal">Journal</label>
-      <input id="journal" name="journal" type="text">
+      <input id="journal" name="journal" type="text" autocomplete="off">
     </p>
 
     <p>
       <label for="volume">Volume</label>
-      <input id="volume" name="volume" type="text">
+      <input id="volume" name="volume" type="text" autocomplete="off">
     </p>
 
     <p>
       <label for="issue">Issue</label>
-      <input id="issue" name="issue" type="text">
+      <input id="issue" name="issue" type="text" autocomplete="off">
     </p>
 
     <p>
       <label for="number">Number</label>
-      <input id="number" name="number" type="text">
+      <input id="number" name="number" type="text" autocomplete="off">
     </p>
 
     <p>
       <label for="pages">Pages</label>
-      <input id="pages" name="pages" type="text">
+      <input id="pages" name="pages" type="text" autocomplete="off" placeholder="separate by --">
     </p>
 
     <p>
@@ -64,7 +65,7 @@
 
     <p>
       <label for="doi">DOI</label>
-      <input id="doi" name="doi" type="text">
+      <input id="doi" name="doi" type="text" autocomplete="off" placeholder="only DOI number, not link">
     </p>
 
     <p>
@@ -79,6 +80,16 @@
   <pre id="output"></pre>
 
   <script>
+    function replaceDollarDelimiters(text) {
+      let opening = true;
+
+      return text.replace(/\$/g, () => {
+          const replacement = opening ? "\\(" : "\\)";
+          opening = !opening;
+          return replacement;
+      });
+    }
+
     const form = document.getElementById("dataForm");
     const output = document.getElementById("output");
     const copyBtn = document.getElementById("copyBtn");
@@ -90,7 +101,7 @@
 
       entry.title = document.getElementById("title").value;
       entry.authorList = document.getElementById("authorList").value;
-      entry.abstract = document.getElementById("abstract").value;
+      entry.abstract = replaceDollarDelimiters(document.getElementById("abstract").value);
       entry.journal = document.getElementById("journal").value;
       entry.volume = document.getElementById("volume").value;
       entry.issue = document.getElementById("issue").value;

@@ -19,17 +19,18 @@
   <form id="dataForm">
     <p>
       <label for="title">Title</label>
-      <input id="title" name="title" type="text">
+      <input id="title" name="title" type="text" autocomplete="off">
     </p>
 
     <p>
       <label for="authorList">Author List</label>
-      <input id="authorList" name="authorList" type="text">
+      <input id="authorList" name="authorList" type="text" autocomplete="off" placeholder="abbreviate first names, separate by commas">
     </p>
 
     <p>
       <label for="abstract">Abstract</label>
-      <input id="abstract" name="abstract" type="text">
+      <br>
+      <textarea id="abstract" name="abstract" autocomplete="off"></textarea>
     </p>
 
     <p>
@@ -39,7 +40,7 @@
 
     <p>
       <label for="arXiv">arXiv Identifier</label>
-      <input id="arXiv" name="arXiv" type="text">
+      <input id="arXiv" name="arXiv" type="text" autocomplete="off" placeholder="arXiv number only, not link">
     </p>
 
     <p>
@@ -54,6 +55,16 @@
   <pre id="output"></pre>
 
   <script>
+    function replaceDollarDelimiters(text) {
+      let opening = true;
+
+      return text.replace(/\$/g, () => {
+          const replacement = opening ? "\\(" : "\\)";
+          opening = !opening;
+          return replacement;
+      });
+    }
+
     const form = document.getElementById("dataForm");
     const output = document.getElementById("output");
     const copyBtn = document.getElementById("copyBtn");
@@ -65,7 +76,7 @@
 
       entry.title = document.getElementById("title").value;
       entry.authorList = document.getElementById("authorList").value;
-      entry.abstract = document.getElementById("abstract").value;
+      entry.abstract = replaceDollarDelimiters(document.getElementById("abstract").value);
       entry.date = document.getElementById("date").value;
       entry.arXiv = document.getElementById("arXiv").value;
       entry.frontPage = document.getElementById("frontPage").checked;
