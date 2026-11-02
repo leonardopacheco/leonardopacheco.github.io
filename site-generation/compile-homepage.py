@@ -27,7 +27,7 @@ index.write(
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv='content-language' content='en-us'>
-    <meta name="description" content="I'm a postdoctoral researcher at TU Wien. I research mathematical logic. This site contains my presentations and publications.">
+    <meta name="description" content="I'm an Assistant Professor at Tohoku University. My research is focused on non-classical modal logics, with focus on fixed-point and provability logics.">
 
     <!-- Load simple.css and custom modifications -->
     <link rel="stylesheet" type="text/css" href="simple.css">
@@ -40,11 +40,11 @@ index.write(
 <body>
     <header>
         <h1>Leonardo Pacheco</h1>
-        <p>Mathematical Logic at the Institute of Science Tokyo</p>
+        <p>Mathematical Logic at Tohoku University</p>
     </header>
 
     <p>
-        I'm a postdoctoral researcher at the Institute of Science Tokyo working with Ryo Kashima. My research is focused on non-classical modal logics, with focus on fixed-point and provability logics.
+        I'm an Assistant Professor at Tohoku University. My research is focused on non-classical modal logics, with focus on fixed-point and provability logics.
     </p>
 
     <!-- -------------------------------- -->
@@ -309,7 +309,7 @@ index.write("""
 
     <h2 id="contact">Contact</h2>
         <p>
-            Mail: leonardovpacheco@gmail.com <br>
+            Mail: pacheco@tohoku.ac.jp<br>
             CV: available <a href="./cv.pdf">here</a> <br>
             Blog: <a href="https://leonardopacheco.xyz/blog">https://leonardopacheco.xyz/blog</a>
         </p>
